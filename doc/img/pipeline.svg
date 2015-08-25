@@ -1,0 +1,2650 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="pipeline.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mstart"
+       style="overflow:visible">
+      <path
+         id="path5086"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.4) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend"
+       style="overflow:visible;">
+      <path
+         id="path5089"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;">
+      <path
+         id="path3926"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path3908"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective3606"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3628"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3672"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3672-2"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3730"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3837"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3837-7"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3823"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3823-0"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3823-6"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3823-06"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3823-061"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3823-4"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3823-65"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3823-9"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3787"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3787-3"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3787-2"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3787-4"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3854"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3918"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3982"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3982-5"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3982-3"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3982-8"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4157"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4157-3"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4307"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4307-1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4408"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4408-0"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4509"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4509-9"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4610"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4610-0"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective5541"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-0"
+       style="overflow:visible">
+      <path
+         id="path5089-9"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <inkscape:perspective
+       id="perspective5575"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-2"
+       style="overflow:visible">
+      <path
+         id="path5089-5"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <inkscape:perspective
+       id="perspective5609"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective5631"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective5653"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-6"
+       style="overflow:visible">
+      <path
+         id="path5089-0"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <inkscape:perspective
+       id="perspective5681"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective5904"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-9"
+       style="overflow:visible">
+      <path
+         id="path5086-4"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-3"
+       style="overflow:visible">
+      <path
+         id="path5089-51"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <inkscape:perspective
+       id="perspective5904-1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-4"
+       style="overflow:visible">
+      <path
+         id="path5086-6"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-9"
+       style="overflow:visible">
+      <path
+         id="path5089-4"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="388.50763"
+     inkscape:cy="658.26011"
+     inkscape:document-units="cm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-global="true"
+     inkscape:snap-nodes="false"
+     inkscape:snap-to-guides="false"
+     gridtolerance="30"
+     inkscape:window-width="1678"
+     inkscape:window-height="1030"
+     inkscape:window-x="0"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0"
+     inkscape:snap-bbox-midpoints="true">
+    <sodipodi:guide
+       orientation="1,0"
+       position="141.73228,685.71429"
+       id="guide2816" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="637.79528,614.28571"
+       id="guide2818" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid3978"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect3592"
+       width="497.04837"
+       height="89.213745"
+       x="142.12541"
+       y="72.75531"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706"
+       width="29.46084"
+       height="14.460846"
+       x="245.26958"
+       y="107.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="259.76562"
+       y="119.23621"
+       id="text3708"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710"
+         x="259.76562"
+         y="119.23621">IF</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-5"
+       width="29.46084"
+       height="14.460846"
+       x="275.26959"
+       y="107.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="289.76562"
+       y="119.23622"
+       id="text3708-6"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-9"
+         x="289.76562"
+         y="119.23622">ID</tspan></text>
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-7"
+       width="29.46084"
+       height="14.460846"
+       x="305.26959"
+       y="107.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="319.76562"
+       y="119.23621"
+       id="text3708-4"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-5"
+         x="319.76562"
+         y="119.23621">EX</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-54"
+       width="29.46084"
+       height="14.460846"
+       x="335.26959"
+       y="107.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="349.76562"
+       y="119.23621"
+       id="text3708-7"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-4"
+         x="349.76562"
+         y="119.23621">MEM</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-3"
+       width="29.46084"
+       height="14.460846"
+       x="365.26959"
+       y="107.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="379.76562"
+       y="119.23621"
+       id="text3708-0"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-7"
+         x="379.76562"
+         y="119.23621">WB</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-8"
+       width="29.46084"
+       height="14.460846"
+       x="395.26959"
+       y="122.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="409.76562"
+       y="134.23621"
+       id="text3708-68"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-8"
+         x="409.76562"
+         y="134.23621">IF</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-5-4"
+       width="29.46084"
+       height="14.460846"
+       x="425.26959"
+       y="122.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="439.76562"
+       y="134.23622"
+       id="text3708-6-3"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-9-1"
+         x="439.76562"
+         y="134.23622">ID</tspan></text>
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-7-4"
+       width="29.46084"
+       height="14.460846"
+       x="455.26959"
+       y="122.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="469.76562"
+       y="134.23621"
+       id="text3708-4-9"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-5-2"
+         x="469.76562"
+         y="134.23621">EX</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-54-0"
+       width="29.46084"
+       height="14.460846"
+       x="485.26959"
+       y="122.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="499.76562"
+       y="134.23621"
+       id="text3708-7-6"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-4-8"
+         x="499.76562"
+         y="134.23621">MEM</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-3-9"
+       width="29.46084"
+       height="14.460846"
+       x="515.26959"
+       y="122.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="529.76562"
+       y="134.23621"
+       id="text3708-0-2"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-7-6"
+         x="529.76562"
+         y="134.23621">WB</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect3592-9"
+       width="496.85208"
+       height="119.01744"
+       x="142.49127"
+       y="192.85345"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-8-6"
+       width="29.46084"
+       height="14.460846"
+       x="245.26958"
+       y="212.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="259.76562"
+       y="224.23621"
+       id="text3708-68-4"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-8-9"
+         x="259.76562"
+         y="224.23621">IF</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-5-4-5"
+       width="29.46084"
+       height="14.460846"
+       x="275.26959"
+       y="212.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="289.76562"
+       y="224.23622"
+       id="text3708-6-3-0"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-9-1-4"
+         x="289.76562"
+         y="224.23622">ID</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-7-4-8"
+       width="29.46084"
+       height="14.460846"
+       x="305.26959"
+       y="212.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="319.76562"
+       y="224.23621"
+       id="text3708-4-9-7"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-5-2-1"
+         x="319.76562"
+         y="224.23621">EX</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-54-0-7"
+       width="29.46084"
+       height="14.460846"
+       x="335.26959"
+       y="212.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="349.76562"
+       y="224.23621"
+       id="text3708-7-6-2"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-4-8-7"
+         x="349.76562"
+         y="224.23621">MEM</tspan></text>
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-3-9-2"
+       width="29.46084"
+       height="14.460846"
+       x="365.26959"
+       y="212.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="379.76562"
+       y="224.23621"
+       id="text3708-0-2-2"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-7-6-6"
+         x="379.76562"
+         y="224.23621">WB</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-8-6-1"
+       width="29.46084"
+       height="14.460846"
+       x="275.26959"
+       y="227.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="289.76562"
+       y="239.23621"
+       id="text3708-68-4-0"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-8-9-6"
+         x="289.76562"
+         y="239.23621">IF</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-5-4-5-1"
+       width="29.46084"
+       height="14.460846"
+       x="305.26959"
+       y="227.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="319.76562"
+       y="239.23622"
+       id="text3708-6-3-0-5"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-9-1-4-9"
+         x="319.76562"
+         y="239.23622">ID</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-7-4-8-4"
+       width="29.46084"
+       height="14.460846"
+       x="335.26959"
+       y="227.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="349.76562"
+       y="239.23621"
+       id="text3708-4-9-7-9"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-5-2-1-0"
+         x="349.76562"
+         y="239.23621">EX</tspan></text>
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-54-0-7-9"
+       width="29.46084"
+       height="14.460846"
+       x="365.26959"
+       y="227.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="379.76562"
+       y="239.23621"
+       id="text3708-7-6-2-1"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-4-8-7-7"
+         x="379.76562"
+         y="239.23621">MEM</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-3-9-2-7"
+       width="29.46084"
+       height="14.460846"
+       x="395.26959"
+       y="227.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="409.76562"
+       y="239.23621"
+       id="text3708-0-2-2-1"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-7-6-6-1"
+         x="409.76562"
+         y="239.23621">WB</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-8-6-9"
+       width="29.46084"
+       height="14.460846"
+       x="305.26959"
+       y="242.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="319.76562"
+       y="254.23622"
+       id="text3708-68-4-7"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-8-9-7"
+         x="319.76562"
+         y="254.23622">IF</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-5-4-5-6"
+       width="29.46084"
+       height="14.460846"
+       x="335.26959"
+       y="242.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="349.76562"
+       y="254.23622"
+       id="text3708-6-3-0-7"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-9-1-4-3"
+         x="349.76562"
+         y="254.23622">ID</tspan></text>
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-7-4-8-6"
+       width="29.46084"
+       height="14.460846"
+       x="365.26959"
+       y="242.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="379.76562"
+       y="254.23622"
+       id="text3708-4-9-7-5"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-5-2-1-6"
+         x="379.76562"
+         y="254.23622">EX</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-54-0-7-3"
+       width="29.46084"
+       height="14.460846"
+       x="395.26959"
+       y="242.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="409.76562"
+       y="254.23622"
+       id="text3708-7-6-2-9"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-4-8-7-4"
+         x="409.76562"
+         y="254.23622">MEM</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-3-9-2-8"
+       width="29.46084"
+       height="14.460846"
+       x="425.26959"
+       y="242.63176"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="439.76562"
+       y="254.23622"
+       id="text3708-0-2-2-12"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-7-6-6-9"
+         x="439.76562"
+         y="254.23622">WB</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-8-6-90"
+       width="29.46084"
+       height="14.460846"
+       x="335.26959"
+       y="257.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="349.76562"
+       y="269.23621"
+       id="text3708-68-4-8"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-8-9-8"
+         x="349.76562"
+         y="269.23621">IF</tspan></text>
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-5-4-5-5"
+       width="29.46084"
+       height="14.460846"
+       x="365.26959"
+       y="257.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="379.76562"
+       y="269.23624"
+       id="text3708-6-3-0-0"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-9-1-4-96"
+         x="379.76562"
+         y="269.23624">ID</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-7-4-8-3"
+       width="29.46084"
+       height="14.460846"
+       x="395.26959"
+       y="257.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="409.76562"
+       y="269.23621"
+       id="text3708-4-9-7-8"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-5-2-1-5"
+         x="409.76562"
+         y="269.23621">EX</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-54-0-7-6"
+       width="29.46084"
+       height="14.460846"
+       x="425.26959"
+       y="257.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="439.76562"
+       y="269.23621"
+       id="text3708-7-6-2-11"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-4-8-7-5"
+         x="439.76562"
+         y="269.23621">MEM</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-3-9-2-9"
+       width="29.46084"
+       height="14.460846"
+       x="455.26959"
+       y="257.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="469.76562"
+       y="269.23621"
+       id="text3708-0-2-2-8"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-7-6-6-4"
+         x="469.76562"
+         y="269.23621">WB</tspan></text>
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-8-6-10"
+       width="29.46084"
+       height="14.460846"
+       x="365.26959"
+       y="272.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="379.76562"
+       y="284.23624"
+       id="text3708-68-4-3"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-8-9-0"
+         x="379.76562"
+         y="284.23624">IF</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-5-4-5-4"
+       width="29.46084"
+       height="14.460846"
+       x="395.26959"
+       y="272.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="409.76562"
+       y="284.23624"
+       id="text3708-6-3-0-4"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-9-1-4-4"
+         x="409.76562"
+         y="284.23624">ID</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-7-4-8-47"
+       width="29.46084"
+       height="14.460846"
+       x="425.26959"
+       y="272.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="439.76566"
+       y="284.23624"
+       id="text3708-4-9-7-6"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-5-2-1-3"
+         x="439.76566"
+         y="284.23624">EX</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-54-0-7-1"
+       width="29.46084"
+       height="14.460846"
+       x="455.26962"
+       y="272.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="469.76562"
+       y="284.23624"
+       id="text3708-7-6-2-7"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-4-8-7-59"
+         x="469.76562"
+         y="284.23624">MEM</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-3-9-2-6"
+       width="29.46084"
+       height="14.460846"
+       x="485.26962"
+       y="272.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="499.76566"
+       y="284.23624"
+       id="text3708-0-2-2-2"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-7-6-6-17"
+         x="499.76566"
+         y="284.23624">WB</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect3592-9-3"
+       width="496.55603"
+       height="200.72137"
+       x="142.6393"
+       y="357.0015"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-8-6-8"
+       width="29.46084"
+       height="14.460846"
+       x="245.26958"
+       y="382.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="259.76562"
+       y="394.23621"
+       id="text3708-68-4-5"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-8-9-74"
+         x="259.76562"
+         y="394.23621">IF</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-5-4-5-18"
+       width="29.46084"
+       height="14.460846"
+       x="275.26959"
+       y="382.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="289.76559"
+       y="394.23624"
+       id="text3708-6-3-0-59"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-9-1-4-7"
+         x="289.76559"
+         y="394.23624">ID</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-7-4-8-5"
+       width="29.46084"
+       height="14.460846"
+       x="305.26956"
+       y="382.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="319.76562"
+       y="394.23621"
+       id="text3708-4-9-7-3"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-5-2-1-8"
+         x="319.76562"
+         y="394.23621">EX</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-54-0-7-8"
+       width="29.46084"
+       height="14.460846"
+       x="335.26959"
+       y="382.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="349.76562"
+       y="394.23621"
+       id="text3708-7-6-2-3"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-4-8-7-1"
+         x="349.76562"
+         y="394.23621">MEM</tspan></text>
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-3-9-2-89"
+       width="29.46084"
+       height="14.460846"
+       x="365.26959"
+       y="382.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="379.76562"
+       y="394.23621"
+       id="text3708-0-2-2-6"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-7-6-6-43"
+         x="379.76562"
+         y="394.23621">WB</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-8-6-3"
+       width="29.46084"
+       height="14.460846"
+       x="245.26958"
+       y="397.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="259.76562"
+       y="409.23624"
+       id="text3708-68-4-86"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-8-9-04"
+         x="259.76562"
+         y="409.23624">IF</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-5-4-5-8"
+       width="29.46084"
+       height="14.460846"
+       x="275.26959"
+       y="397.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="289.76562"
+       y="409.23624"
+       id="text3708-6-3-0-8"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-9-1-4-8"
+         x="289.76562"
+         y="409.23624">ID</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-7-4-8-9"
+       width="29.46084"
+       height="14.460846"
+       x="305.26956"
+       y="397.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="319.76562"
+       y="409.23624"
+       id="text3708-4-9-7-7"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-5-2-1-7"
+         x="319.76562"
+         y="409.23624">EX</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-54-0-7-64"
+       width="29.46084"
+       height="14.460846"
+       x="335.26959"
+       y="397.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="349.76562"
+       y="409.23624"
+       id="text3708-7-6-2-30"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-4-8-7-3"
+         x="349.76562"
+         y="409.23624">MEM</tspan></text>
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-3-9-2-0"
+       width="29.46084"
+       height="14.460846"
+       x="365.26959"
+       y="397.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="379.76562"
+       y="409.23624"
+       id="text3708-0-2-2-9"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-7-6-6-2"
+         x="379.76562"
+         y="409.23624">WB</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-8-6-1-4"
+       width="29.46084"
+       height="14.460846"
+       x="275.26959"
+       y="412.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="289.76562"
+       y="424.23624"
+       id="text3708-68-4-0-7"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-8-9-6-7"
+         x="289.76562"
+         y="424.23624">IF</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-5-4-5-1-5"
+       width="29.46084"
+       height="14.460846"
+       x="305.26959"
+       y="412.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="319.76562"
+       y="424.23624"
+       id="text3708-6-3-0-5-4"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-9-1-4-9-8"
+         x="319.76562"
+         y="424.23624">ID</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-7-4-8-4-1"
+       width="29.46084"
+       height="14.460846"
+       x="335.26959"
+       y="412.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="349.76562"
+       y="424.23624"
+       id="text3708-4-9-7-9-2"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-5-2-1-0-8"
+         x="349.76562"
+         y="424.23624">EX</tspan></text>
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-54-0-7-9-9"
+       width="29.46084"
+       height="14.460846"
+       x="365.26959"
+       y="412.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="379.76562"
+       y="424.23624"
+       id="text3708-7-6-2-1-3"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-4-8-7-7-6"
+         x="379.76562"
+         y="424.23624">MEM</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-3-9-2-7-8"
+       width="29.46084"
+       height="14.460846"
+       x="395.26959"
+       y="412.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="409.76562"
+       y="424.23624"
+       id="text3708-0-2-2-1-0"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-7-6-6-1-2"
+         x="409.76562"
+         y="424.23624">WB</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-8-6-1-0"
+       width="29.46084"
+       height="14.460846"
+       x="275.26959"
+       y="427.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="289.76562"
+       y="439.23621"
+       id="text3708-68-4-0-5"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-8-9-6-1"
+         x="289.76562"
+         y="439.23621">IF</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-5-4-5-1-1"
+       width="29.46084"
+       height="14.460846"
+       x="305.26959"
+       y="427.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="319.76562"
+       y="439.23624"
+       id="text3708-6-3-0-5-0"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-9-1-4-9-85"
+         x="319.76562"
+         y="439.23624">ID</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-7-4-8-4-0"
+       width="29.46084"
+       height="14.460846"
+       x="335.26959"
+       y="427.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="349.76562"
+       y="439.23621"
+       id="text3708-4-9-7-9-6"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-5-2-1-0-4"
+         x="349.76562"
+         y="439.23621">EX</tspan></text>
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-54-0-7-9-6"
+       width="29.46084"
+       height="14.460846"
+       x="365.26959"
+       y="427.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="379.76562"
+       y="439.23621"
+       id="text3708-7-6-2-1-2"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-4-8-7-7-5"
+         x="379.76562"
+         y="439.23621">MEM</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-3-9-2-7-86"
+       width="29.46084"
+       height="14.460846"
+       x="395.26959"
+       y="427.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="409.76562"
+       y="439.23621"
+       id="text3708-0-2-2-1-2"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-7-6-6-1-8"
+         x="409.76562"
+         y="439.23621">WB</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-8-6-9-4"
+       width="29.46084"
+       height="14.460846"
+       x="305.26959"
+       y="442.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="319.76562"
+       y="454.23624"
+       id="text3708-68-4-7-7"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-8-9-7-2"
+         x="319.76562"
+         y="454.23624">IF</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-5-4-5-6-4"
+       width="29.46084"
+       height="14.460846"
+       x="335.26959"
+       y="442.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="349.76562"
+       y="454.23624"
+       id="text3708-6-3-0-7-0"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-9-1-4-3-6"
+         x="349.76562"
+         y="454.23624">ID</tspan></text>
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-7-4-8-6-2"
+       width="29.46084"
+       height="14.460846"
+       x="365.26959"
+       y="442.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="379.76562"
+       y="454.23624"
+       id="text3708-4-9-7-5-9"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-5-2-1-6-9"
+         x="379.76562"
+         y="454.23624">EX</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-54-0-7-3-0"
+       width="29.46084"
+       height="14.460846"
+       x="395.26959"
+       y="442.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="409.76562"
+       y="454.23624"
+       id="text3708-7-6-2-9-8"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-4-8-7-4-1"
+         x="409.76562"
+         y="454.23624">MEM</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-3-9-2-8-3"
+       width="29.46084"
+       height="14.460846"
+       x="425.26959"
+       y="442.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="439.76562"
+       y="454.23624"
+       id="text3708-0-2-2-12-1"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-7-6-6-9-1"
+         x="439.76562"
+         y="454.23624">WB</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-8-6-9-3"
+       width="29.46084"
+       height="14.460846"
+       x="305.26959"
+       y="457.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="319.76562"
+       y="469.23624"
+       id="text3708-68-4-7-4"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-8-9-7-0"
+         x="319.76562"
+         y="469.23624">IF</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-5-4-5-6-3"
+       width="29.46084"
+       height="14.460846"
+       x="335.26959"
+       y="457.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="349.76562"
+       y="469.23624"
+       id="text3708-6-3-0-7-9"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-9-1-4-3-1"
+         x="349.76562"
+         y="469.23624">ID</tspan></text>
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-7-4-8-6-9"
+       width="29.46084"
+       height="14.460846"
+       x="365.26959"
+       y="457.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="379.76562"
+       y="469.23624"
+       id="text3708-4-9-7-5-6"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-5-2-1-6-93"
+         x="379.76562"
+         y="469.23624">EX</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-54-0-7-3-3"
+       width="29.46084"
+       height="14.460846"
+       x="395.26959"
+       y="457.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="409.76562"
+       y="469.23624"
+       id="text3708-7-6-2-9-80"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-4-8-7-4-5"
+         x="409.76562"
+         y="469.23624">MEM</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-3-9-2-8-6"
+       width="29.46084"
+       height="14.460846"
+       x="425.26959"
+       y="457.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="439.76562"
+       y="469.23624"
+       id="text3708-0-2-2-12-6"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-7-6-6-9-4"
+         x="439.76562"
+         y="469.23624">WB</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-8-6-90-0"
+       width="29.46084"
+       height="14.460846"
+       x="335.26959"
+       y="472.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="349.76562"
+       y="484.23621"
+       id="text3708-68-4-8-0"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-8-9-8-4"
+         x="349.76562"
+         y="484.23621">IF</tspan></text>
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-5-4-5-5-6"
+       width="29.46084"
+       height="14.460846"
+       x="365.26959"
+       y="472.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="379.76562"
+       y="484.23624"
+       id="text3708-6-3-0-0-2"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-9-1-4-96-6"
+         x="379.76562"
+         y="484.23624">ID</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-7-4-8-3-7"
+       width="29.46084"
+       height="14.460846"
+       x="395.26959"
+       y="472.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="409.76562"
+       y="484.23621"
+       id="text3708-4-9-7-8-5"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-5-2-1-5-6"
+         x="409.76562"
+         y="484.23621">EX</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-54-0-7-6-9"
+       width="29.46084"
+       height="14.460846"
+       x="425.26959"
+       y="472.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="439.76562"
+       y="484.23621"
+       id="text3708-7-6-2-11-8"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-4-8-7-5-7"
+         x="439.76562"
+         y="484.23621">MEM</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-3-9-2-9-2"
+       width="29.46084"
+       height="14.460846"
+       x="455.26959"
+       y="472.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="469.76562"
+       y="484.23621"
+       id="text3708-0-2-2-8-8"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-7-6-6-4-2"
+         x="469.76562"
+         y="484.23621">WB</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-8-6-90-9"
+       width="29.46084"
+       height="14.460846"
+       x="335.26959"
+       y="487.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="349.76562"
+       y="499.23621"
+       id="text3708-68-4-8-6"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-8-9-8-0"
+         x="349.76562"
+         y="499.23621">IF</tspan></text>
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-5-4-5-5-2"
+       width="29.46084"
+       height="14.460846"
+       x="365.26959"
+       y="487.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="379.76562"
+       y="499.23624"
+       id="text3708-6-3-0-0-7"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-9-1-4-96-61"
+         x="379.76562"
+         y="499.23624">ID</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-7-4-8-3-3"
+       width="29.46084"
+       height="14.460846"
+       x="395.26959"
+       y="487.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="409.76562"
+       y="499.23621"
+       id="text3708-4-9-7-8-2"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-5-2-1-5-1"
+         x="409.76562"
+         y="499.23621">EX</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-54-0-7-6-5"
+       width="29.46084"
+       height="14.460846"
+       x="425.26959"
+       y="487.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="439.76562"
+       y="499.23621"
+       id="text3708-7-6-2-11-9"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-4-8-7-5-9"
+         x="439.76562"
+         y="499.23621">MEM</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-3-9-2-9-1"
+       width="29.46084"
+       height="14.460846"
+       x="455.26959"
+       y="487.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="469.76562"
+       y="499.23621"
+       id="text3708-0-2-2-8-4"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-7-6-6-4-9"
+         x="469.76562"
+         y="499.23621">WB</tspan></text>
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-8-6-10-1"
+       width="29.46084"
+       height="14.460846"
+       x="365.26959"
+       y="502.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="379.76562"
+       y="514.23621"
+       id="text3708-68-4-3-0"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-8-9-0-7"
+         x="379.76562"
+         y="514.23621">IF</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-5-4-5-4-5"
+       width="29.46084"
+       height="14.460846"
+       x="395.26959"
+       y="502.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="409.76562"
+       y="514.23621"
+       id="text3708-6-3-0-4-8"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-9-1-4-4-7"
+         x="409.76562"
+         y="514.23621">ID</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-7-4-8-47-0"
+       width="29.46084"
+       height="14.460846"
+       x="425.26959"
+       y="502.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="439.76566"
+       y="514.23621"
+       id="text3708-4-9-7-6-4"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-5-2-1-3-8"
+         x="439.76566"
+         y="514.23621">EX</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-54-0-7-1-0"
+       width="29.46084"
+       height="14.460846"
+       x="455.26962"
+       y="502.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="469.76562"
+       y="514.23621"
+       id="text3708-7-6-2-7-4"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-4-8-7-59-2"
+         x="469.76562"
+         y="514.23621">MEM</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-3-9-2-6-9"
+       width="29.46084"
+       height="14.460846"
+       x="485.26962"
+       y="502.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="499.76566"
+       y="514.23621"
+       id="text3708-0-2-2-2-6"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-7-6-6-17-1"
+         x="499.76566"
+         y="514.23621">WB</tspan></text>
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-8-6-10-4"
+       width="29.46084"
+       height="14.460846"
+       x="365.26959"
+       y="517.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="379.76562"
+       y="529.23621"
+       id="text3708-68-4-3-2"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-8-9-0-2"
+         x="379.76562"
+         y="529.23621">IF</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-5-4-5-4-2"
+       width="29.46084"
+       height="14.460846"
+       x="395.26956"
+       y="517.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="409.76559"
+       y="529.23621"
+       id="text3708-6-3-0-4-0"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-9-1-4-4-5"
+         x="409.76559"
+         y="529.23621">ID</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-7-4-8-47-5"
+       width="29.46084"
+       height="14.460846"
+       x="425.26956"
+       y="517.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="439.76562"
+       y="529.23621"
+       id="text3708-4-9-7-6-2"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-5-2-1-3-9"
+         x="439.76562"
+         y="529.23621">EX</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-54-0-7-1-02"
+       width="29.46084"
+       height="14.460846"
+       x="455.26959"
+       y="517.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="469.76559"
+       y="529.23621"
+       id="text3708-7-6-2-7-8"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-4-8-7-59-3"
+         x="469.76559"
+         y="529.23621">MEM</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.53915417;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3706-3-9-2-6-8"
+       width="29.46084"
+       height="14.460846"
+       x="485.26959"
+       y="517.63177"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="499.76562"
+       y="529.23621"
+       id="text3708-0-2-2-2-0"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3710-7-6-6-17-4"
+         x="499.76562"
+         y="529.23621">WB</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.99212599;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1Mend)"
+       d="m 245.49606,149.1299 300,0"
+       id="path4703"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="276.19141"
+       y="144.69812"
+       id="text5529"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan5531"
+         x="276.19141"
+         y="144.69812"
+         style="font-size:8px">vrijeme / ciklusi</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.9447782;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1Mend)"
+       d="m 245.47238,297.87209 268.38954,0"
+       id="path4703-1"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="276.19141"
+       y="293.44031"
+       id="text5529-9"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan5531-6"
+         x="276.19141"
+         y="293.44031"
+         style="font-size:8px">vrijeme / ciklusi</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.9447782;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1Mend)"
+       d="m 245.47237,545.1299 268.38954,0"
+       id="path4703-1-4"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="276.19141"
+       y="540.69812"
+       id="text5529-9-4"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan5531-6-9"
+         x="276.19141"
+         y="540.69812"
+         style="font-size:8px">vrijeme / ciklusi</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.70866142;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1Mend);marker-start:url(#Arrow1Mstart)"
+       d="m 244.92752,98.89184 149.12241,0"
+       id="path4703-5"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="321.4375"
+       y="94.569214"
+       id="text5529-0"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe1.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan5531-2"
+         x="321.4375"
+         y="94.569214"
+         style="font-size:8px">jedna instrukcija</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="m 245.43879,207.36218 149.12242,0"
+       id="path4703-5-7"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="321.94879"
+       y="203.03957"
+       id="text5529-0-4"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe2.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan5531-2-3"
+         x="321.94879"
+         y="203.03957"
+         style="font-size:8px">jedna instrukcija</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="m 246.69705,372.02076 149.12241,0"
+       id="path4703-5-2"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="323.20703"
+       y="367.69812"
+       id="text5529-0-2"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pipe3.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan5531-2-6"
+         x="323.20703"
+         y="367.69812"
+         style="font-size:8px">jedna instrukcija</tspan></text>
+  </g>
+</svg>

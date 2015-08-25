@@ -1,0 +1,53 @@
+#set term x11
+set term postscript enhanced linewidth 6 "Helvetica" 24
+
+set border lw 0.2
+set key left
+
+###
+set output "opencl-bs-1.eps" rotate 90
+
+set title "t61p - FX570m"
+set xlabel "Rang Matrica"
+set ylabel "Trajanje [sec]"
+
+set multiplot
+set xrange [128:1664]
+set yrange [-5:450]
+set xtics(256, 512, 1024, 1536)
+
+set origin 0,0
+plot 'opencl-lap-1.dat' using 1:2 notitle  with points, \
+     'opencl-lap-1.dat' using 1:2 smooth csplines title "Test 1" with lines, \
+     'opencl-lap-1.dat' using 1:3 notitle  with points, \
+     'opencl-lap-1.dat' using 1:3 smooth csplines title "Test 2" with lines, \
+     'opencl-lap-1.dat' using 1:4 notitle  with points, \
+     'opencl-lap-1.dat' using 1:4 smooth csplines title "Test 3" with lines
+
+set origin 0,0.5
+plot 'opencl-lap-4.dat' using 1:2 notitle  with points, \
+     'opencl-lap-4.dat' using 1:2 smooth csplines title "Test 1" with lines, \
+     'opencl-lap-4.dat' using 1:3 notitle  with points, \
+     'opencl-lap-4.dat' using 1:3 smooth csplines title "Test 2" with lines, \
+     'opencl-lap-4.dat' using 1:4 notitle  with points, \
+     'opencl-lap-4.dat' using 1:4 smooth csplines title "Test 3" with lines
+
+set origin 0.5,0.5
+plot 'opencl-lap-8.dat' using 1:2 notitle  with points, \
+     'opencl-lap-8.dat' using 1:2 smooth csplines title "Test 1" with lines, \
+     'opencl-lap-8.dat' using 1:3 notitle  with points, \
+     'opencl-lap-8.dat' using 1:3 smooth csplines title "Test 2" with lines, \
+     'opencl-lap-8.dat' using 1:4 notitle  with points, \
+     'opencl-lap-8.dat' using 1:4 smooth csplines title "Test 3" with lines
+
+set origin 0.5,0
+plot 'opencl-lap-16.dat' using 1:2 notitle  with points, \
+     'opencl-lap-16.dat' using 1:2 smooth csplines title "Test 1" with lines, \
+     'opencl-lap-16.dat' using 1:3 notitle  with points, \
+     'opencl-lap-16.dat' using 1:3 smooth csplines title "Test 2" with lines, \
+     'opencl-lap-16.dat' using 1:4 notitle  with points, \
+     'opencl-lap-16.dat' using 1:4 smooth csplines title "Test 3" with lines
+
+unset multiplot
+
+reset

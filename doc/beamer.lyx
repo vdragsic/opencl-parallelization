@@ -1,0 +1,2292 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\usetheme{Warsaw}
+% or ...
+
+\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+\end_preamble
+\use_default_options false
+\language english
+\inputencoding auto
+\font_roman charter
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 2
+\use_esint 0
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Paralelizacija algoritama na heterogenim platformama kroz sustav OpenCL
+\end_layout
+
+\begin_layout Author
+Veljko Dragšić
+\end_layout
+
+\begin_layout Date
+3.
+ ožujak 2010.
+\end_layout
+
+\begin_layout BeginFrame
+Sadržaj
+\end_layout
+
+\begin_layout Itemize
+OpenCL
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+opis sustava (arhitektura, OpenCL C, ...)
+\end_layout
+
+\begin_layout Itemize
+trenutno podržane platforme
+\end_layout
+
+\begin_layout Itemize
+usporedba sa drugim tehnologijama
+\end_layout
+
+\begin_layout Itemize
+praktični primjeri
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Heterogene platforme
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+CPU, GPU, Cell, ...
+\end_layout
+
+\begin_layout Itemize
+buduće arhitekture
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Primjeri i rezultati
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+množenje matrica
+\end_layout
+
+\begin_layout Itemize
+usporedba rezultata sa drugim tehologijama
+\end_layout
+
+\begin_layout Itemize
+simulacija međudjelovanja čestica
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+Uvod
+\end_layout
+
+\begin_layout BeginFrame
+Uvod
+\end_layout
+
+\begin_layout Itemize
+Paralelni algoritmi
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+CPU slijedno izvodi naredbe --> nedovoljno brzo
+\end_layout
+
+\begin_layout Itemize
+više CPU-ova izvodi naredbe --> ubrzanje
+\end_layout
+
+\begin_layout Itemize
+trebamo paralelizirati algoritme --> razne tehnologije i principi
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Heterogene platforme
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+CPU: x86, x86_64, 
+\emph on
+Power
+\emph default
+, 
+\emph on
+ARM
+\emph default
+, ...
+\end_layout
+
+\begin_layout Itemize
+GPU: 
+\emph on
+Nvidia
+\emph default
+, 
+\emph on
+ATI
+\emph default
+, ...
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+\begin_inset Quotes eld
+\end_inset
+
+hibridne
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ arhitekture: 
+\emph on
+Cell
+\emph default
+, ...
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+OpenCL
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+sustav za paralelizaciju algoritama
+\end_layout
+
+\begin_layout Itemize
+podržava heterogene platforme (prvi takav)
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+OpenCL
+\end_layout
+
+\begin_layout Subsection
+Opis sustava
+\end_layout
+
+\begin_layout BeginFrame
+Razvoj OpenCL-a
+\end_layout
+
+\begin_layout Itemize
+projekt započela tvrtka 
+\emph on
+Apple inc
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+upravljanje standardom je prepušteno konzorciju 
+\emph on
+Khronos
+\emph default
+ (2008.) 
+\end_layout
+
+\begin_layout Itemize
+u razvoju sudjeluju 
+\emph on
+Apple
+\emph default
+, 
+\emph on
+Nvidia
+\emph default
+, 
+\emph on
+AMD/ATI
+\emph default
+, 
+\emph on
+Intel
+\emph default
+ i 
+\emph on
+IBM
+\end_layout
+
+\begin_layout Itemize
+prva javno dostupna implementacija u 
+\emph on
+Mac OS X
+\emph default
+-u (2009.)
+\end_layout
+
+\begin_layout Itemize
+kasnije uslijedile implementacije od 
+\emph on
+ATI
+\emph default
+-a i 
+\emph on
+Nvidie
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Opis sustava
+\end_layout
+
+\begin_layout Itemize
+namijenjen paralelnom programiranju opće namjene na heterogenim platformama
+\end_layout
+
+\begin_layout Itemize
+cilja na područje od 
+\emph on
+desktop
+\emph default
+ aplikacija do računarstva visokih preformansi (engl.
+ 
+\emph on
+HPC
+\emph default
+)
+\end_layout
+
+\begin_layout Itemize
+sustav se sastoji od sučelja za pristup sklopovskim platformama, biblioteka,
+ sustava za raspodjelu poslova i 
+\emph on
+OpenCL C
+\emph default
+ programskog jezika
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Po specifikaciji ...
+\end_layout
+
+\begin_layout Itemize
+
+\lang croatian
+podrška za paralelne programske modele bazirane na podjeli podataka i/ili
+ zadataka
+\end_layout
+
+\begin_layout Itemize
+
+\lang croatian
+podskup programskog jezika ISO C99, proširen ekstenzijama za paralelizaciju
+\end_layout
+
+\begin_layout Itemize
+
+\lang croatian
+definira konzistentne numeričke zahtjeve bazirane na standardu IEEE 754
+\end_layout
+
+\begin_layout Itemize
+
+\lang croatian
+definira konfiguracijski profil za ručne i ugradbene uređaje
+\end_layout
+
+\begin_layout Itemize
+
+\lang croatian
+učinkovito komunicira se tehnologijama 
+\emph on
+OpenGL
+\emph default
+ i ostalim sučeljima za pristup grafičkim karticama
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Subsection
+Podržane platforme
+\end_layout
+
+\begin_layout BeginFrame
+Implementacije i trenutno podržane platforme
+\end_layout
+
+\begin_layout Itemize
+rad sa CPU i GPU podržan na 
+\emph on
+Mac OS X Snow Leopardu
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Nvidia
+\emph default
+ izdala 
+\emph on
+drivere
+\emph default
+ za svoje 
+\emph on
+novije
+\emph default
+ GPU-ove.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+AMD/ATI
+\emph default
+ izadao 
+\emph on
+drivere
+\emph default
+ za x86_64 CPU-ove (SSE3 set instrukcija) i 
+\emph on
+novije
+\emph default
+ ATI-jeve GPU-ove.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Via
+\emph default
+ izdala podršku za 
+\emph on
+ChoromotionHD 2.0
+\emph default
+ video procesor.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+IBM
+\emph default
+ izdao podršku za 
+\emph on
+Cell
+\emph default
+ procesore u 
+\emph on
+Blade
+\emph default
+ poslužiteljima.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Očekuje se podrška od 
+\emph on
+Intela
+\emph default
+ jer je sudjelovao u razvoju standarda?
+\end_layout
+
+\begin_layout Itemize
+Većina implementacija je još uvijek u 
+\emph on
+beta
+\emph default
+ fazi.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Subsection
+Arhitektura sustava
+\end_layout
+
+\begin_layout BeginFrame
+Arhitektura sustava
+\end_layout
+
+\begin_layout Itemize
+platformski model
+\end_layout
+
+\begin_layout Itemize
+izvršni (engl.
+ 
+\emph on
+execution
+\emph default
+) model
+\end_layout
+
+\begin_layout Itemize
+memorijski model
+\end_layout
+
+\begin_layout Itemize
+programski (engl.
+ 
+\emph on
+programming
+\emph default
+) model
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Platformski model
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename img/platform.png
+	lyxscale 50
+	width 9cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Izvršni model
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+OpenCL
+\emph default
+ jezgre (engl.
+ 
+\emph on
+kernel
+\emph default
+) se izvode na 
+\emph on
+OpenCL
+\emph default
+ uređajima
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+napisane su u 
+\emph on
+OpenCL C
+\emph default
+ programskom jeziku (proširenje ISO C99)
+\end_layout
+
+\end_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+OpenCL
+\emph default
+ aplikacija se izvodi na domaćinu
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+stvara programske kontekste (engl.
+ 
+\emph on
+context
+\emph default
+), slijedove (engl.
+ 
+\emph on
+programming queue
+\emph default
+s) i memorijske međuspremnike (engl.
+ 
+\emph on
+buffers
+\emph default
+)
+\end_layout
+
+\begin_layout Itemize
+stvara okolinu i upravlja izvođenjem programskih jezgri
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Izvršni model - indeksni prostor
+\end_layout
+
+\begin_layout Itemize
+za pokretanje programske jezgre je potrebno definirati veličinu problema
+ po dimenzijama (1, 2 ili 3) 
+\emph on
+(primjer matrice)
+\end_layout
+
+\begin_layout Itemize
+definira se globalna i lokalna veličina problema
+\end_layout
+
+\begin_layout Itemize
+stvara se indeksni prostor koji odgovara veličini problema po dimezijama
+\end_layout
+
+\begin_layout Itemize
+za svaki element indeksnog prostora se pokreće po jedna radna jednica, tj.
+ programska jezgra
+\end_layout
+
+\begin_layout Itemize
+radne jedinice su grupirane u radne grupe (prema lokalnoj veličini prostora)
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Izvršni model - globalni i lokalni indeksi
+\end_layout
+
+\begin_layout Itemize
+svaka radna jedinica u indeksnom prostoru se može identificirati:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+preko globalnih indeksa (engl.
+ 
+\emph on
+global ID
+\emph default
+)
+\end_layout
+
+\begin_layout Itemize
+preko lokalnih indeksa (engl.
+ 
+\emph on
+local ID
+\emph default
+) i indeksa radnih grupa (engl.
+ 
+\emph on
+work-group ID
+\emph default
+)
+\end_layout
+
+\end_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+navedeni princip omogućava bolju granulaciju u rješavanju problema, te olakšava
+ paralelizaciju algoritama jer se sustav donekle sam pobrine oko raspodjele
+ posla
+\end_layout
+
+\begin_layout Itemize
+svaka radna jedinica izvodi isti programski kod na različitim podacima -->
+ SIMD, tj.
+ SIMT (
+\emph on
+Single Instruction, Multiple Thread
+\emph default
+)
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Izvršni model - primjer
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename img/execution.png
+	lyxscale 50
+	width 9cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Memorijski model (1.)
+\end_layout
+
+\begin_layout Itemize
+Globalna memorija
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+sve radne jedinice (neovisno o grupama) mogu čitati/pisati po globalnoj
+ memoriji
+\end_layout
+
+\begin_layout Itemize
+fizički odgovara radnoj memoriji (engl.
+ 
+\emph on
+RAM
+\emph default
+) na matičnoj ploči ili grafičkoj kartici
+\end_layout
+
+\end_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Konstantna memorija
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+područje globalne memorije koje ostaje nepromijenjeno za vrijeme izvođenja
+ programskih jezgri
+\end_layout
+
+\begin_layout Itemize
+za pisanje/čitanje se brine domaćin
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Memorijski model (2.)
+\end_layout
+
+\begin_layout Itemize
+Lokalna memorija
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+memorijsko područje namijenjeno radnim jedinicama unutar iste radne grupe
+\end_layout
+
+\begin_layout Itemize
+u praksi odgovara priručnoj (engl.
+ 
+\emph on
+cache
+\emph default
+) memoriji mikroprocesora
+\begin_inset Newline newline
+\end_inset
+
+(ovisno o implementaciji, primjer za CPU na 
+\emph on
+OS X
+\emph default
+-u)
+\end_layout
+
+\begin_layout Itemize
+značajno manja od globalne memoriji, ali i značajno brži pristup
+\end_layout
+
+\end_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Privatna memorija
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+područje namijenjeno svakoj radnoj jedinici pojedinačno
+\end_layout
+
+\begin_layout Itemize
+svaka radna jedinica ima pristup samo svojoj privatnoj memoriji
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Programski model
+\end_layout
+
+\begin_layout Itemize
+podatkovna paralelizacija (do sada opisani princip, češći)
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+paralelizacija po poslovima
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+programske jezgre se pokreću neovisno o indeksnom prostoru
+\end_layout
+
+\begin_layout Itemize
+sinkronizacija radnih jedinica unutar iste grupe (i kod podatkovne)
+\end_layout
+
+\begin_layout Itemize
+sinkronizacija stavljanjem poslova u programski slijed
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Subsection
+Osnovne funkcije i primjer
+\end_layout
+
+\begin_layout BeginFrame
+Osnovne grupe funkcija
+\end_layout
+
+\begin_layout Itemize
+detektiranje platformi
+\end_layout
+
+\begin_layout Itemize
+dohvaćanje informacija o platformama
+\end_layout
+
+\begin_layout Itemize
+baratanje sa kontekstom (engl.
+ 
+\emph on
+context
+\emph default
+)
+\end_layout
+
+\begin_layout Itemize
+baratanje sa programskim slijedovima (engl.
+ 
+\emph on
+programming-queues
+\emph default
+)
+\end_layout
+
+\begin_layout Itemize
+rad sa memorijskim međuspremnicima (engl.
+ 
+\emph on
+buffers
+\emph default
+)
+\end_layout
+
+\begin_layout Itemize
+stvaranje i izvođenje programskih jezgri (engl.
+ 
+\emph on
+kernel
+\emph default
+s)
+\end_layout
+
+\begin_layout Itemize
+rad sa događajima
+\end_layout
+
+\begin_layout Itemize
+povezivanje sa OpenGL-om
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+OpenCL C (1.)
+\end_layout
+
+\begin_layout Itemize
+proširenje 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+C
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+-a (ISO C99)
+\end_layout
+
+\begin_layout Itemize
+služi za pisanje programskih jezgri
+\end_layout
+
+\begin_layout Itemize
+predovi ga programski prevodilac sadržan u 
+\emph on
+driverima
+\emph default
+
+\begin_inset Newline newline
+\end_inset
+
+(LLVM u Mac OS X-u)
+\end_layout
+
+\begin_layout Itemize
+izbačene neke mogučnosti 
+\begin_inset Newline newline
+\end_inset
+
+(pokazivači na funkcije, rekurzije, varijabilne duljine nizova, ...)
+\end_layout
+
+\begin_layout Itemize
+proširenja za paralelizaciju 
+\begin_inset Newline newline
+\end_inset
+
+(rad sa radnim jedinicama i grupama, vektorima podataka, sinkronizacija,
+ OpenGL, ...)
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+OpenCL C (2.)
+\end_layout
+
+\begin_layout Itemize
+kvalifikatori za varijable:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+__global
+\emph default
+, 
+\emph on
+__local
+\emph default
+, 
+\emph on
+__constant
+\emph default
+, 
+\emph on
+__private
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+funkcije za rad sa radnim jedinicima i grupama:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+get_work_dim()
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+get_global_size(D)
+\emph default
+, 
+\emph on
+get_global_id(D)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+get_local_size(D)
+\emph default
+, 
+\emph on
+get_local_id(D)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+get_num_groups(D)
+\emph default
+, 
+\emph on
+get_group_id(D)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+funkcije za sinkronizaciju:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+barrier(flags)
+\emph default
+, 
+\emph on
+[read|write]_mem_fence(flags)
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Tijek razvoja OpenCL aplikacije
+\end_layout
+
+\begin_layout Enumerate
+stvaranje konteksta za željene tipove uređaja
+\end_layout
+
+\begin_layout Enumerate
+stvaranje programskog slijeda za određeni uređaj u kontekstu
+\end_layout
+
+\begin_layout Enumerate
+stvaranje memorijskih međuspremnika u kontekstu
+\end_layout
+
+\begin_layout Enumerate
+stvaranje objekta programa u kontekstu (
+\emph on
+kernel
+\emph default
+, 
+\emph on
+JiT
+\emph default
+)
+\end_layout
+
+\begin_layout Enumerate
+stvaranje poveznice sa programskom jezgrom unutar programa
+\end_layout
+
+\begin_layout Enumerate
+postavljanje argumenata programskoj jezgri
+\end_layout
+
+\begin_layout Enumerate
+izvođenje programske jezgre u određenom programskom slijedu, definiranje
+ indeksnog prostora
+\end_layout
+
+\begin_layout Enumerate
+dohvat rezultata iz memorijskih međuspremnika
+\end_layout
+
+\begin_layout Enumerate
+oslobađanje zauzetih resursa
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Subsection
+Usporedba sa drugim tehnologijama
+\end_layout
+
+\begin_layout BeginFrame
+Druge tehnologije (1.)
+\end_layout
+
+\begin_layout Itemize
+CUDA (engl.
+ 
+\emph on
+Compute Unified Device Architecture
+\emph default
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+GP/GPU
+\emph default
+ na 
+\emph on
+Nvidia
+\emph default
+ GPU-ovima --> ograničenje
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Nvidia
+\emph default
+ implementirala 
+\emph on
+OpenCL
+\emph default
+ ja temelju 
+\emph on
+CUDA
+\emph default
+-e
+\end_layout
+
+\end_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+ATI Stream
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+AMD/ATI
+\emph default
+-jev pandan 
+\emph on
+CUDA
+\emph default
+-i
+\end_layout
+
+\end_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+MPI (engl.
+ 
+\emph on
+Message Passing Interface
+\emph default
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+manje-više
+\emph default
+ standard u paralelizaciji danas
+\end_layout
+
+\begin_layout Itemize
+više procesa unutar jednog ili više računala (CPU)
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Druge tehnologije (2.)
+\end_layout
+
+\begin_layout Itemize
+OpenMP
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+paralelizacija algoritama predprocesorskim naredbama prevodiocu
+\end_layout
+
+\begin_layout Itemize
+koristi višedretvenost, jednostavan, ograničen na jedno računalo
+\end_layout
+
+\end_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Cell Broadband Engine
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+IBM-ova tehnologija namijenjena isključivo 
+\emph on
+Cell
+\emph default
+ mikroprocesorima
+\end_layout
+
+\end_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+DirectCompute
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+Microsoftova
+\emph default
+ tehnologija za 
+\emph on
+GP/GPU
+\emph default
+ uključena u novi 
+\emph on
+DirectX
+\end_layout
+
+\end_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Intel Ct
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+tek najavljena tehnologija, cilja na CPU i GPU
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+Heterogene platforme
+\end_layout
+
+\begin_layout Subsection
+CPU
+\end_layout
+
+\begin_layout BeginFrame
+Centralni mikroprocesor
+\end_layout
+
+\begin_layout Itemize
+mikroprocesor opće namjene <--> brzina/jednostavnost
+\end_layout
+
+\begin_layout Itemize
+već par desetaka godina osnova PC-a, x86 arhitektura (
+\emph on
+CISC
+\emph default
+), kompatibilnost unatrag
+\end_layout
+
+\begin_layout Itemize
+slijedno izvodi naredbe --> pokušaji ubrzavanja rada (osim dizanja radnog
+ takta)
+\end_layout
+
+\begin_layout Itemize
+cjevovodi, superskalarnost, višedretvenost, priručna memorija, 
+\emph on
+out-of-order-execution
+\end_layout
+
+\begin_layout Itemize
+dostizanje fizičke granice radnog takta + 
+\emph on
+mooreov
+\emph default
+ zakon --> višejezgrenost
+\end_layout
+
+\begin_layout Itemize
+potreba za paralelizacijom (postojećih) algoritama
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Subsection
+GPU
+\end_layout
+
+\begin_layout BeginFrame
+Grafički mikroprocesor
+\end_layout
+
+\begin_layout Itemize
+pojavili se kasnije od CPU-a zbog potrebe ubrzavanja prikaza 3D grafike
+\end_layout
+
+\begin_layout Itemize
+paralelizirane arhitekture namijenjene izvođenju velikog broja (istovjetnih)
+ matematičkih kalkulacija na velikoj količini podataka --> specijaliziranost
+\end_layout
+
+\begin_layout Itemize
+u odnosu na CPU: manja 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+logika
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ i priručna memorija, veći dio zauzimaju ALU jedinice
+\end_layout
+
+\begin_layout Itemize
+značajno brže napredovali u odnosu na CPU (takt, tranzistori)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+GeForce8
+\emph default
+ (2006.), 128 procesora dretvi, grupe od 8 sa 16kB memorije, svaki može izvršavat
+i po 96 dretvi istovremeno --> 12,288 dretvi (
+\emph on
+latency hiding
+\emph default
+)
+\end_layout
+
+\begin_layout Itemize
+u zadnjih par godina pojava 
+\emph on
+GP/GPU
+\emph default
+-a
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Subsection
+IBM Cell
+\end_layout
+
+\begin_layout BeginFrame
+IBM Cell
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+IBM
+\emph default
+, 
+\emph on
+Sony
+\emph default
+ i 
+\emph on
+Toshiba
+\emph default
+ razvijaju procesor za 
+\emph on
+PlayStation3
+\emph default
+ (2005.
+ g.)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+\begin_inset Quotes eld
+\end_inset
+
+hibridne
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ arhitekture
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+1 
+\emph on
+Power
+\emph default
+ jezgra (PPE) (dvodretvena)
+\end_layout
+
+\begin_layout Itemize
+8 vektorskih jezgri (SPE)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+64-bitni RISC, EIB sabirnica (300Gb/s), 3.2GHz
+\end_layout
+
+\begin_layout Itemize
+osim 
+\emph on
+IBM Blade
+\emph default
+ poslužitelja nema većeg prodora (nije x86), 
+\emph on
+PlayStation3
+\emph default
+ grozdovi
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Yellow Dog GNU/Linux
+\emph default
+ + 
+\emph on
+IBM SDK
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Subsection
+Buduće arhitekture
+\end_layout
+
+\begin_layout BeginFrame
+Buduće arhitekture
+\end_layout
+
+\begin_layout Itemize
+imamo višejezgrene CPU-ove opće namjene --> neizbježni zbog kompatibilnosti
+ (
+\emph on
+OS
+\emph default
+, korisničke aplikacije, ...)
+\end_layout
+
+\begin_layout Itemize
+imamo GPU-ove koji preuzimaju ulogu matematičkog koprocesora
+\end_layout
+
+\begin_layout Itemize
+mogućnost 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+hibridnih
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ procesora ili CPU + akcelerator (GPU)
+\end_layout
+
+\begin_layout Itemize
+OpenCL je prvi sustav za heterogene platforme!
+\end_layout
+
+\begin_layout Itemize
+Intel Larrabee
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+višejezgrena kombinacija CPU-a i GPU-a, x86 arhitektura
+\end_layout
+
+\begin_layout Itemize
+po najavama bi se trebao pojaviti 2010.
+ ?
+\end_layout
+
+\begin_layout Itemize
+dobra naznaka budućeg razvoja mikroprocesora
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+Primjeri i rezultati
+\end_layout
+
+\begin_layout Subsection
+Primjer množenja matrica
+\end_layout
+
+\begin_layout BeginFrame
+Primjer množenja matrica
+\end_layout
+
+\begin_layout Itemize
+jednostavan za realizaciju u svim sustavima:
+\emph on
+ MPI
+\emph default
+, 
+\emph on
+OpenMP
+\emph default
+ i 
+\emph on
+OpenCL
+\end_layout
+
+\begin_layout Itemize
+korišeno 
+\emph on
+python
+\emph default
+ sučelje za 
+\emph on
+OpenCL
+\emph default
+, 
+\emph on
+pyOpenCL
+\emph default
+, programske jezgre u 
+\emph on
+OpenCL C
+\emph default
+-u
+\end_layout
+
+\begin_layout Itemize
+isprobane različite veličine matrica, tipovi podataka, odnos globalne i
+ lokalne 
+\emph on
+OpenCL
+\emph default
+ memorije, veličina lokalnog indeksnog prostora
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+par snippeta kernela uz objašenjenja
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+frametitle{
+\end_layout
+
+\end_inset
+
+Programska jezgra 1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+__kernel void matrix_mul(const __global float* A,
+\end_layout
+
+\begin_layout Plain Layout
+
+                         const __global float* B,
+\end_layout
+
+\begin_layout Plain Layout
+
+                         __global float* C,
+\end_layout
+
+\begin_layout Plain Layout
+
+                         uint m, uint n, uint p) 
+\end_layout
+
+\begin_layout Plain Layout
+
+{   
+\end_layout
+
+\begin_layout Plain Layout
+
+	// odredivanje retka i stupca u indeksnom prostoru
+\end_layout
+
+\begin_layout Plain Layout
+
+    uint row = get_global_id(0);   
+\end_layout
+
+\begin_layout Plain Layout
+
+    uint col = get_global_id(1);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    // mnozenje elemenata matrica, C = A * B
+\end_layout
+
+\begin_layout Plain Layout
+
+    C[row * p + col] = 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+    for (uint k = 0; k < n; ++k)     
+\end_layout
+
+\begin_layout Plain Layout
+
+        C[row*p+col] += A[row*n+k] * B[k*p+col]; 
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+frametitle{
+\end_layout
+
+\end_inset
+
+Programska jezgra 2
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+// odredivanje velicine bloka   
+\end_layout
+
+\begin_layout Plain Layout
+
+uint blockSize = get_local_size(0);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+// odredivanje indeksa radne grupe
+\end_layout
+
+\begin_layout Plain Layout
+
+uint row = get_group_id(0);
+\end_layout
+
+\begin_layout Plain Layout
+
+uint col = get_group_id(1);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+// odredivanje lokalnih indeksa u grupi
+\end_layout
+
+\begin_layout Plain Layout
+
+uint x = get_local_id(0);
+\end_layout
+
+\begin_layout Plain Layout
+
+uint y = get_local_id(1);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+// odredivanje indeksa u matrici
+\end_layout
+
+\begin_layout Plain Layout
+
+uint pos_x = (row * blockSize + x) * p;   
+\end_layout
+
+\begin_layout Plain Layout
+
+uint pos_y = col * blockSize + y;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+frametitle{
+\end_layout
+
+\end_inset
+
+Programska jezgra 3
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+// iteracija kroz sve elemente ...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+// kopiranje (pod)matrica A i B u lokalnoj mem.
+\end_layout
+
+\begin_layout Plain Layout
+
+// svaka radna jedinica kopira po jedan element
+\end_layout
+
+\begin_layout Plain Layout
+
+subA[x * blockSize + y] = A[blockA + x * n + y];
+\end_layout
+
+\begin_layout Plain Layout
+
+subB[x * blockSize + y] = B[blockB + x * p + y];
+\end_layout
+
+\begin_layout Plain Layout
+
+      
+\end_layout
+
+\begin_layout Plain Layout
+
+// cekanje da sve radne jednice zavrse kopiranje
+\end_layout
+
+\begin_layout Plain Layout
+
+barrier(CLK_LOCAL_MEM_FENCE);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+// mnozenje elemenata podmatrica A i B
+\end_layout
+
+\begin_layout Plain Layout
+
+for(int k = 0; k < blockSize; ++k)
+\end_layout
+
+\begin_layout Plain Layout
+
+ subC += subA[x*blockSize+k] * subB[k*blockSize+y];   
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Postignuti rezulati - veličina bloka 1
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename gnuplot/opencl-bs-1.eps
+	width 9cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Postignuti rezultati - veličina bloka 8
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename gnuplot/opencl-bs-8.eps
+	width 9cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Postignuti rezultati - tipovi podataka
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename gnuplot/opencl-datatype.eps
+	width 9cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Subsection
+Usporedba rezultata sa drugim tehnologijama
+\end_layout
+
+\begin_layout BeginFrame
+OpenCL vs.
+ OpenMP
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename gnuplot/opencl-openmp.eps
+	width 9cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Subsection
+Osvrt na rezultate
+\end_layout
+
+\begin_layout BeginFrame
+Osvrt na rezultate: CPU 
+\emph on
+vs
+\emph default
+ GPU (1)
+\end_layout
+
+\begin_layout Itemize
+hardverske platforme:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+OpenCL
+\emph default
+: 
+\emph on
+Nvidia FX570m
+\emph default
+, 475MHz, 256MB, 2007.
+\begin_inset Newline newline
+\end_inset
+
+programska jezgra 3, veličina bloka 8
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+OpenMP
+\emph default
+: 2x 
+\emph on
+Xeon E5504
+\emph default
+ (4 jezgre), 2GHz, 8GB, 2009.
+\end_layout
+
+\end_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+GPU je postigao nešto bolje rezultate!?
+\end_layout
+
+\begin_layout Itemize
+pa zapravo očekivano zbog odnosa opće namjene CPU-a spram specijaliziranog
+ GPU-a
+\end_layout
+
+\begin_layout Itemize
+postavlja se pitanje koje platforme je danas optimalno koristiti 
+\begin_inset Newline newline
+\end_inset
+
+(naravno ovisno o tipu problema)
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+hint! Tesla vs CPU cluster
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section*
+Zaključak
+\end_layout
+
+\begin_layout BeginFrame
+Odabir platforme
+\end_layout
+
+\begin_layout Itemize
+neophodnost CPU-a (x86, 
+\emph on
+Power
+\emph default
+, 
+\emph on
+ARM
+\emph default
+, ...) zbog zadržavanja kompatibilnosti --> OS, korisničke aplikacije, slijedni
+ algoritmi
+\end_layout
+
+\begin_layout Itemize
+gomilanje CPU-a je skupo, do 8 procesora po računalu, nakon toga organiziranje
+ u grozdove itd.
+\end_layout
+
+\begin_layout Itemize
+mogučnost ugradnje 1 ili više GPU-a je relativno jeftino --> lagano skaliranje
+ GPU-a
+\end_layout
+
+\begin_layout Itemize
+i nova superračunala se sastoje i od GPU-ova
+\end_layout
+
+\begin_layout Itemize
+u budućnosti možemo očekivati 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+hibridne
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ mikroprocesore i veće iskorištavanje GPU-a kao dodatnih akceleratora za
+ aplikacije
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+OpenCL
+\end_layout
+
+\begin_layout Itemize
+prvi sustav za paralelizaciju namijenjen heterogenim hardverskim platformama
+\end_layout
+
+\begin_layout Itemize
+sve relevantnije kompanije sudjeluju u njegovom stvaranju, otvorena specifikacij
+a
+\end_layout
+
+\begin_layout Itemize
+za sada još uvijek upitne implementacije i podrška
+\end_layout
+
+\begin_layout Itemize
+cilja na područje od korisničkih aplikacija (obrada slike, videa, zvuka,
+ ...) pa sve do računarstva visokih preformansi (
+\emph on
+HPC
+\emph default
+)
+\end_layout
+
+\begin_layout Itemize
+pojednostavljuje paralelizaciju algoritama, te omogučava bolje iskorištavanje
+ hardvera koji danas nalazimo u osobnim računalima
+\end_layout
+
+\begin_layout Itemize
+nedostatak mrežnog sloja
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\end_body
+\end_document

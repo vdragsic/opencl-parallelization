@@ -1,0 +1,1508 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+\makeatletter
+\let\ps@plain\ps@empty
+\let\ps@headings\ps@empty
+\makeatother
+\end_preamble
+\use_default_options false
+\language croatian
+\inputencoding utf8
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement tbh
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 0
+\use_esint 0
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 18mm
+\topmargin 20mm
+\rightmargin 18mm
+\bottommargin 20mm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 2
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Paralelizacija algoritama na heterogenim platformama kroz sustav OpenCL
+\end_layout
+
+\begin_layout Author
+
+\size larger
+Veljko Dragšić
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+Zavod za elektroniku, mikroelektroniku, računalne i inteligentne sustave
+\begin_inset Newline newline
+\end_inset
+
+Fakultet elektrotehnike i računarstva
+\begin_inset Newline newline
+\end_inset
+
+
+\size small
+Unska 3, 10000 Zagreb, Hrvatska
+\begin_inset Newline newline
+\end_inset
+
+Tel: 00 385 (0)95 8126 991, E-mail: veljko@kset.org
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+
+\series bold
+Sustav OpenCL olakšava paralelizaciju algoritama i pritom cilja na sklopovski
+ heterogene platforme, konkretno centralne i grafičke mikroprocesore.
+ Sustav je zanimljiv jer je prvi takve vrste, a pojavio se je 2009.
+ godine.
+ U ovom radu je kroz praktične primjere ispitana funkcionalnost i performanse
+ samog sustava.
+ Također su obrađene i trenutno dostupne platforme, točnije tipovi mikroprocesor
+a, koje OpenCL podržava.
+ Kroz dobivene rezultate je OpenCL uspoređen sa drugim sustavima, a posebna
+ je pažnja usmjerena na usporedbu današnjih mikroprocesora i rezultata koje
+ postižu ovisno o tipu problema.
+\end_layout
+
+\begin_layout Section
+Uvod
+\end_layout
+
+\begin_layout Standard
+Centralni mikroprocesor slijedno prolazi kroz strojni jezik programa i izvršava
+ naredbe.
+ Kako nikada neće postojati dovoljno brz mikroprocesor, logično je više
+ procesora udružiti kako bi brže izveli željeni algoritam.
+ Za tu priliku je potrebno slijedne algoritme paralelizirati, što ponekad
+ nije nimalo jednostavan zadatak, te postoje različite tehnologije i principi
+ kako bi se to ostvarilo.
+\end_layout
+
+\begin_layout Standard
+Danas imamo na raspolaganju više tipova mikroprocesora specijaliziranih
+ za različite probleme, poput centralnog ili grafičkog mikroprocesora.
+ Time se pojavljuje problem prenosivosti programa između različitih platformi
+ zbog njihove poprilično različite arhitekture.
+ Paralelizacija algoritama i njihova prenosivost zahtijeva drugačiji pristup
+ dosadašnjem načinu oblikovanja algoritama.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+OpenCL
+\emph default
+ je sustav koji olakšava paralelizaciju algoritama, te je prvi koji omogućuje
+ njihovu prenosivost između različitih platformi.
+ Standard se pojavio 2009.
+ godine, svaki proizvođač ga može implementirati jer je specifikacija otvorenog
+ tipa, te se sastoji od sučelja za pristup sklopovlju (mikroprocesorima),
+ biblioteka i 
+\emph on
+OpenCL C
+\emph default
+ programskog jezika.
+\end_layout
+
+\begin_layout Section
+OpenCL
+\end_layout
+
+\begin_layout Standard
+Do ne tako davno se za procesorski zahtjevne algoritme oslanjalo isključivo
+ na centralne mikroprocesore (engl.
+ CPU), a od 2007.
+ je počelo iskorištavanje i specijaliziranih grafičkih mikroprocesora (engl.
+ GPU) u općenitije svrhe.
+ Zadnjih nekoliko godina imamo na raspolaganju višejezgrene CPU-ove, a GPU-ovi
+ su sami po sebi paralelizirane arhitekture, u oba slučaja se nameće potreba
+ za paralelnim algoritmima.
+ 
+\emph on
+Open Computing Language
+\emph default
+ cilja upravo na to područje, paralelizaciju algoritama i heterogene platforme.
+\end_layout
+
+\begin_layout Standard
+Razvoj 
+\emph on
+OpenCL-a
+\emph default
+ je započela tvrtka 
+\emph on
+Apple
+\emph default
+, a 2008.
+ godine je upravljanje standardnom prepušteno konzorciju 
+\emph on
+Khronos
+\emph default
+ koji okuplja sve relevantnije kompanije u području mikroprocesora i multimedije
+, 
+\emph on
+Apple
+\emph default
+, 
+\emph on
+AMD/ATI
+\emph default
+, 
+\emph on
+IBM
+\emph default
+, 
+\emph on
+Intel
+\emph default
+ i 
+\emph on
+Nvidia
+\emph default
+.
+ 2009.
+ godine su se pojavile prve implementacije, podrška za CPU i GPU u 
+\emph on
+Mac OS X Snow Leopardu
+\emph default
+, 
+\emph on
+Nvidia
+\emph default
+ je podržala svoje GPU-ove kroz upravljačke programe (engl.
+ 
+\emph on
+drivers
+\emph default
+), a isto tako i 
+\emph on
+AMD/ATI
+\emph default
+ svoje CPU-ove i GPU-ove.
+\end_layout
+
+\begin_layout Standard
+Standard 
+\emph on
+OpenCL
+\emph default
+ cilja na područje od ugradbene (
+\shape italic
+\emph on
+engl.
+
+\emph default
+ embedded
+\shape default
+) i potrošačke (
+\shape italic
+\emph on
+engl.
+
+\emph default
+ consumer
+\shape default
+) programske opreme, pa sve do razine računarstva visokih performansi (
+\shape italic
+\emph on
+engl.
+
+\emph default
+ High performance Computing, HPC
+\shape default
+).
+ Sustav je zadržan na niskoj razini koja je blizu samog sklopovlja, što
+ omogućuje postizanje izrazito dobrih performansi.
+\end_layout
+
+\begin_layout Section
+Arhitektura OpenCL-a
+\end_layout
+
+\begin_layout Standard
+Sustav se sastoji od hijerarhije 4 modela, platformskog, memorijskog, izvršnog
+ i programskog.
+\end_layout
+
+\begin_layout Subsection
+
+\series bold
+Platformski model
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Sastoji se od domaćina (osobno računalo) sa jednim ili više računalnih uređaja
+ (engl.
+ 
+\emph on
+compute device
+\emph default
+), npr.
+ CPU i/ili GPU.
+ Svaki računalni uređaj može imati više računalnih jedinica (engl.
+ 
+\emph on
+computing unit
+\emph default
+), npr.
+ jezgra CPU-a ili multiprocesor GPU-a, a svaka računalna jedinica može imati
+ više procesirajućih elemenata (engl.
+ 
+\emph on
+processing element
+\emph default
+), poput procesora dretvi kod GPU-a.
+\end_layout
+
+\begin_layout Subsection
+
+\series bold
+\lang english
+Izvršni model
+\end_layout
+
+\begin_layout Standard
+Izvođenje 
+\emph on
+OpenCL
+\emph default
+ aplikacije se odvija u dva dijela: programske jezgre (engl.
+ 
+\emph on
+kernel
+\emph default
+) se izvode na jednom ili više računalnih uređaja, a na domaćinu se izvodi
+ program koji upravlja izvođenjem programskih jezgri, točnije brine se za
+ stvaranje konteksta (
+\shape italic
+\emph on
+engl.
+
+\emph default
+ contex
+\shape default
+) za izvođenje, programskih slijedova (
+\shape italic
+\emph on
+engl.
+
+\emph default
+ programming queues
+\shape default
+) i stvaranje memorijskih međuspremnika (
+\shape italic
+\emph on
+engl.
+
+\emph default
+ memory buffer
+\shape default
+) za pisanje i čitanje podataka iz memorije uređaja.
+\end_layout
+
+\begin_layout Standard
+Prilikom pokretanja 
+\emph on
+OpenCL
+\emph default
+ jezgri se mora definirati (globalna) veličina problema, za primjer možemo
+ zamisliti broj redaka i stupaca matrice.
+ Sustav zatim stvara indeksni prostor koji odgovara prije definiranim dimenzijam
+a, te se za svaki njegov element pokreće po jedna radna jedinica (engl.
+ 
+\emph on
+working-item
+\emph default
+), tj.
+ 
+\emph on
+OpenCL
+\emph default
+ jezgra koja se izvodi nad elementom matrice.
+ Radne jedinice su grupirane u radne grupe (eng.
+ 
+\emph on
+working-group
+\emph default
+), a veličine radnih grupa se također mogu definirati prilikom pokretanja
+ 
+\emph on
+OpenCL
+\emph default
+ jezgri kroz lokalne veličine problema.
+ Navedeni princip omogućava bolju granulaciju problema.
+\end_layout
+
+\begin_layout Standard
+Svaka radna jedinica se može jednoznačno identificirati u indeksnom prostoru
+ pomoću globalnih indeksa (
+\shape italic
+\emph on
+engl.
+
+\emph default
+ global ID
+\shape default
+).
+ Svaka radna grupa se također može identificirati pomoću indeksa grupa (
+\shape italic
+\emph on
+engl.
+
+\emph default
+ work-group ID
+\shape default
+).
+ Radne jedinice se također mogu indentificirati i pomoću lokalnih indeksa
+ (
+\shape italic
+\emph on
+engl.
+
+\emph default
+ local ID
+\shape default
+) i grupa kojim pripadaju, odnosno svaka radna jedinica ima i svoj jednoznačni
+ lokalni indeks u grupi u kojoj se nalazi (jedna radna jedinica se može
+ nalaziti samo u jednog radnoj grupi).
+\end_layout
+
+\begin_layout Subsection
+
+\series bold
+Memorijski model
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+OpenCL
+\emph default
+ poznaje 4 memorijska područja.
+ Globalnoj memoriji mogu pristupati sve radne jedinice, a ona fizički odgovara
+ radnoj memoriji CPU-a ili GPU-a.
+ Konstantna memorija ostaje nepromijenjena za vrijeme izvođenja jezgri,
+ te se za nju brine domaćin.
+ Lokalna memorija je namijenjena radnim jedinicama unutar iste radne grupe,
+ a njezina lokacija je ovisna o implementaciji, kod GPU-a je to priručna
+ memorija mikroprocesora koja je znatno manja od radne memorije, ali joj
+ je pristup daleko brži.
+ Privatna memorija je namijenjena svakoj radnoj jedinici pojedinačno.
+\end_layout
+
+\begin_layout Subsection
+
+\series bold
+Programski model
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Sustav OpenCL podržava dva programska modela, podatkovnu paralelizaciju
+ (primarni) i paralelizaciju po poslovima.
+ Do sada opisani model je podatkovna paralelizacija, a odvija se po principu
+ SIMD, tj.
+ ista operacija se izvršava nad različitim podacima.
+ 
+\lang croatian
+U modelu paralelizacije po poslovima programska jezgra se pokreće neovisno
+ o indeksnom prostoru, a pretpostavljamo da jedna radna grupa sadrži samo
+ jednu radnu jednicu.
+ U ovom slučaju korisnik postiže paralelizam koristeći vektorske tipove
+ podataka na OpenCL uređaju i stavljajući u red izvršavanja više poslova,
+ te se brine oko sinkronizacije poslova.
+\end_layout
+
+\begin_layout Section
+Komponente sustava
+\end_layout
+
+\begin_layout Standard
+Sustav 
+\emph on
+OpenCL
+\emph default
+ omogućuje aplikacijama korištenje domaćina i dostupnih 
+\emph on
+OpenCL
+\emph default
+ uređaja kao jedno heterogeno paralelno računalo.
+ Sustav se sastoji od sljedećih komponenata:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+OpenCL
+\emph default
+ platformskog sloja: omogućuje programima na domaćinu otkrivanje 
+\emph on
+OpenCL
+\emph default
+ uređaja i njihovih karakteristika, te stvaranje 
+\emph on
+OpenCL
+\emph default
+ konteksta;
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+OpenCL
+\emph default
+ izvršnog okruženja (
+\shape italic
+\emph on
+engl.
+
+\emph default
+ runtime
+\shape default
+): omogućuje programu na domaćinu upravljanje kontekstom;
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+OpenCL
+\emph default
+ prevodioca: služi za stvaranje programa koji sadrže programske jezgre koje
+ se izvršavaju na 
+\emph on
+OpenCL
+\emph default
+ uređajima.
+ Tekst programa se piše u 
+\emph on
+OpenCL C
+\emph default
+ programskom jeziku.
+\end_layout
+
+\begin_layout Subsection
+OpenCL C
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+OpenCL C
+\emph default
+ je proširenje 
+\emph on
+ISO C99
+\emph default
+ programskog jezika.
+ Osim što je jezik proširen, tako su i neke njegove funkcionalnosti izbačene,
+ tj.
+ nisu dozvoljene, najčešće zbog načina izvođenja 
+\emph on
+OpenCL
+\emph default
+ programskih jezgri.
+ To su pokazivači na funkcije, mogućnost rekurzije, varijabilne duljine
+ nizova, te neke druge specifičnosti.
+ S druge strane proširenja uključuju rad sa radnim jedinicama i grupama,
+ vektorske tipove podataka, mogućnost sinkronizacije, te općenito neka proširenj
+a za paralelizam, baratanje sa slikama, povezivanje sa 
+\emph on
+OpenGL
+\emph default
+ sustavom i tako dalje.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Arhitekture mikroprocesora
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Za rad sa 
+\emph on
+OpenCL-om
+\emph default
+ je poželjno poznavati osnove rada mikroprocesora koje danas imamo na raspolagan
+ju u računalima.
+ Postojanje centralnog mikroprocesora je neizbježno za izvršavanje operacijskog
+ sustava i korisničkih aplikacija, ali je i pojava specijaliziranog grafičkog
+ mikroprocesora u računalima vrlo česta.
+ 
+\emph on
+OpenCL
+\emph default
+ omogućava prenosivost istog teksta programa između CPU-a ili GPU-a, te
+ je prvi takav sustav.
+\end_layout
+
+\begin_layout Subsection
+Centralni mikroprocesor - CPU
+\end_layout
+
+\begin_layout Standard
+Osnovni princip funkcioniranja CPU je uglavnom ostao isti do danas, a temelji
+ se na 
+\emph on
+Von Neumannovoj
+\emph default
+ arhitekturi.
+ Mikroprocesor dohvaća redom naredbu po naredbu iz memorije, izvodi ju na
+ aritmeto-logičkoj jedinici, a dobiveni rezultat zapiše nazad na memoriju.
+ Radi se o slijednom izvođenju naredbi, a za jednu naredbu je najčešće potrebno
+ po nekoliko ciklusa mikroprocesora.
+ Današnji CPU-ovi su izuzetni kompleksni kako bi se navedeni princip ubrzao,
+ neke od ugrađenih tehnologija su cjevovodi, superskalarnost, višedretvenost,
+ 
+\emph on
+out-od-order-execution
+\emph default
+ i velike količine priručne memorije.
+ Zadnjih godina su se pojavili višejezgreni CPU-ovi, a teko to možemo smatrati
+ 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+pravim
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ paralelizmom na koji programer može imati utjecaj.
+\end_layout
+
+\begin_layout Subsection
+Grafički mikroprocesor - GPU
+\end_layout
+
+\begin_layout Standard
+Grafički procesori su se pojavili dosta kasnije od CPU-a, tj.
+ tek sredinom '90-ih godina.
+ Kako su specijalizirani za prikaz 3D grafike i njihova arhitektura je u
+ mnogočemu drugačija.
+ Za razliku od CPU-a, GPU je već po arhitekturi paraleliziran, tj.
+ sastoji se od puno (preko 100) procesora dretvi, te relativno male priručne
+ memorije.
+ Razlog je što se kod CPU puno tranzistora iskoristi za 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+logiku
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ procesora i priručnu memoriju, dok se kod GPU-a više tranzistora iskoristi
+ za aritmetologičke jedinice.
+ Iz tog razloga današnji GPU-ovi, sa jednakim brojem tranzistora kao i CPU-ovi,
+ postižu daleko bolje performanse (za red veličine) u matematičkim kalkulacijama.
+ U nazad zadnjih par godina se GPU počeo koristiti i u općenitije svrhe
+ (engl.
+ 
+\emph on
+GP/GPU
+\emph default
+) od prikaza 3D grafike, te ga danas kroz sustav poput 
+\emph on
+OpenCL-a
+\emph default
+ možemo koristiti kao svojevrstan matematički koprocesor CPU-a.
+\end_layout
+
+\begin_layout Subsection
+Ostale i buduće arhitekture
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Zadnjih godina su se pojavile, ali i počele najavljivati, arhitekture koje
+ možemo nazvati 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+hibridima
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ između CPU-a i GPU-a.
+ Za primjer možemo uzeti 
+\emph on
+IBM-ov Cell
+\emph default
+ procesor koji se sastoji od jezgre opće namjene na kojoj se izvršava operacijsk
+i sustav, te 8 specijaliziranih jezgri koje služe za matematičke kalkulacije.
+ Jezgra opće namjene je u ulozi hipervizora nad preostalih 8 jezgri sa kojima
+ je povezana kroz izrazito brzu sabirnicu.
+ Intel je također najavio novu arhitekturu zvanu Larrabbe koja bi se sastojala
+ od većeg broja x86 jezgri.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Na temelju trenutne situacije dostupnih mikroprocesora možemo zaključiti
+ kako u budućnosti možemo očekivati veće iskorištavanje platformi koje se
+ sastoje od neizbježnog mikroprocesora opće namjene za izvršavanje operacijskog
+ sustava, te vrste specijaliziranog mikroprocesora koji bi služio ako dodatni
+ akcelerator.
+ Ništa ne isključuje i korištenje 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+hibridnog
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ mikroprocesora koji objedinjuje obje arhitekture kroz više različitih jezgri.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ispitivanja
+\end_layout
+
+\begin_layout Standard
+Za potrebe ispitivanja su napravljeni primjeri množenja matrica u više različiti
+h tehnologija, 
+\emph on
+OpenCL
+\emph default
+, 
+\emph on
+MPI
+\emph default
+ i 
+\emph on
+OpenMP
+\emph default
+, te primjer simulacije međudjelovanja čestica u 
+\emph on
+OpenCL-u
+\emph default
+.
+ Testne platforme su bile 
+\emph on
+Nvidia FX570m
+\emph default
+ GPU i poslužitelj 
+\emph on
+Marvin
+\emph default
+ sa dva 
+\emph on
+Xeon E5504
+\emph default
+ CPU-a, svaki sa po 4 fizičke jezgre, bez 
+\emph on
+Hyperthreading
+\emph default
+ mogučnosti.
+\end_layout
+
+\begin_layout Subsection
+Množenje matrica
+\end_layout
+
+\begin_layout Standard
+Ispitivanja su provedena za različite veličine kvadratnih matrica i različite
+ tipove podataka.
+
+\lang english
+ Za primjer u 
+\emph on
+OpenCL-u
+\emph default
+ su napravljene tri programske jezgre, prva jezgra koristi globalni indeksni
+ prostor, druga grupe i lokalni indeksni prostor, a treća je ista kao i
+ druga, ali još dodatno koristi lokalnu 
+\emph on
+OpenCL
+\emph default
+ memoriju.
+ 
+\emph on
+MPI
+\emph default
+ i 
+\emph on
+OpenMP
+\emph default
+ primjeri su izvedeni na 
+\emph on
+Marvinu
+\emph default
+, dok je 
+\emph on
+OpenCL
+\emph default
+ primjer izveden na 
+\emph on
+Nvidia
+\emph default
+ GPU-u.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Slika 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:OpenMP---MPI,"
+
+\end_inset
+
+.
+ prikazuje postignute rezultate primjera u 
+\emph on
+MPI-u
+\emph default
+ i 
+\emph on
+OpenMP-u
+\emph default
+.
+ Navedena veličina matrica je broj elemenata po jednoj dimenziji, dakle
+ ukupan broj elemenata matrice odgovara kvadratu navedene vrijednosti.
+ Korišten je tip podataka sa pomičnim zarezom (engl.
+ 
+\emph on
+float
+\emph default
+).
+ U oba primjera su iskorištene sve dostupne jezgre, tj.
+ njih 8.
+ 
+\emph on
+MPI
+\emph default
+ je očekivano postigao nešto lošije rezultate zbog same složenosti sustava
+ u odnosu na 
+\emph on
+OpenMP
+\emph default
+, konkretno je riječ o vremenskom trošku raspodjele podataka i sinkronizacije.
+ Rezultati sa cjelobrojnim tipom podataka (engl.
+ 
+\emph on
+integer
+\emph default
+) su postigli jednake rezultate, dok su oni dvostruke preciznosti (engl.
+ 
+\emph on
+double
+\emph default
+) potrajali nešto duže.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement tbph
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename gnuplot/mpi-openmp.eps
+	width 8.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:OpenMP---MPI,"
+
+\end_inset
+
+
+\emph on
+OpenMP
+\emph default
+ - 
+\emph on
+MPI
+\emph default
+, Marvin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Kod izrade 
+\emph on
+OpenCL
+\emph default
+ jezgri posebno treba obratiti pažnju na veličinu lokalnog indeksnog prostora.
+ Njegova veličina može odigrati značajnu ulogu u postizanju performansa
+ zbog načina na koji GPU izvodi dretve odnosno programske jezgre.
+ U slučaju matrica lokalni indeksni prostor možemo zamisliti kao podjelu
+ matrice na podmatrice, npr.
+ matrica dimenzija 16x16 se sastoji od 16 podmatrica veličina 4x4.
+ Ovisno o toj podjeli i GPU grupira dretve, što je važno zbog 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+skrivanja
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ latencije pristupa memoriji, točnije dok procesor dretvi izvodi jednu dretvu,
+ ostalih nekoliko dohvaća podatke i sprema se na izvođenje, tako se cijeli
+ proces izvođenja značajno ubrzava jer nema 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+praznog
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ hoda.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Za potrebe ispitivanja su napravljene tri programske jezgre, prva pristupa
+ elementima matrice preko globalnih indeksa, druga koristi indekse grupa
+ i lokalne indekse elemenata unutar tih grupa.
+ Jezgra 3 pristupa elementima na isti načina kao i druga, ali dodatno koristi
+ i lokalnu 
+\emph on
+OpenCL
+\emph default
+ memoriju što poboljšava rezultate čak za red veličine.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Slika 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:OpenCL,-veličina-bloka"
+
+\end_inset
+
+.
+ prikazuje postignute rezultate za veličinu lokalnog indeksnog prostora
+ od jedan.
+ Jezgra 3 koja koristi lokalnu memoriju je postigla najlošije rezultate
+ jer dodatno kopira podatke iz globalne u lokalnu memoriju, što nema smisla
+ ako je veličina lokalnog prostora jedan element.
+ Jezgre 1 i 2 su očekivano postigle iste rezultate, jedina razlika je što
+ jezgra 2 koristi grupe i lokalne indekse što nema utjecaja na brzinu.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement tbph
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename gnuplot/opencl-bs-1.eps
+	width 8.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:OpenCL,-veličina-bloka"
+
+\end_inset
+
+
+\emph on
+OpenCL
+\emph default
+, veličina bloka 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na slici 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:OpenCL,-veličina-bloka-8"
+
+\end_inset
+
+.
+ se vide znatno bolje performanse svih primjera prilikom korištenja većeg
+ lokalnog prostora, konkretno se koriste podmatrice veličine 8x8 elemenata.
+ Jezgra 3 je postigla daleko bolje rezultate jer svaku podmatricu prekopira
+ u lokalnu memoriju, tako da se podacima u globalnoj memoriji pristupa samo
+ za potrebe kopiranja, a zatim se sve obavlja u lokalnoj memoriji kojoj
+ je daleko brži pristup.
+ Također treba primjetiti kako i jezgre 1 i 2 također postižu bolje rezultate
+ nego u prethodnom primjeru zbog boljeg grupiranja dretvi.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement tbph
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename gnuplot/opencl-bs-8.eps
+	width 8.5cm
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:OpenCL,-veličina-bloka-8"
+
+\end_inset
+
+
+\emph on
+OpenCL
+\emph default
+, veličina bloka 8
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Korisnik ne treba eksplicitno definirati veličinu lokalnog indeksnog prostora,
+ već se sustav sam može pobrinuti oko toga, no najčešće se preporuča da
+ korisnik sam ispita sa kojom veličinom se postižu najbolji rezultati.
+ U ovom slučaju je veličina bloka od 8x8 postizala bolje rezultate od 4x4,
+ ali je već veličina 16x16 postizala lošije rezultate.
+ Vjerovatan razlog je izrazito mala lokalna OpenCL memorija, svega 16kB
+ po procesoru dretvi, a kako jedan procesor izvodi po nekoliko dretvi vjerovatno
+ dolazi do problema u sinkronizaciji.
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Simulacija međudjelovanja čestica
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Primjerom simulacije međudjelovanja čestica (engl.
+ 
+\emph on
+n-body
+\emph default
+) se za veliki broj čestica u 3D prostoru kroz niz iteracija promatra njihovo
+ međudjelovanje.
+ Svaka čestica ima svoj položaj u prostoru, masu i trenutnu brzinu, a svakom
+ iteracijom se računaju privlačne sile između svih čestica i određuje njihov
+ novi položaj.
+ Navedeni primjer je računski, odnosno procesorski, izuzetno zahtjevan zbog
+ velikog broja čestica i iteracija.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Slika 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:OpenCL,-N-body,-veličine"
+
+\end_inset
+
+.
+ prikazuje utjecaj veličine lokalnog prostora na postignute rezultate, broj
+ čestica je 1024, a iteracija 128.
+ Očekivano su postignuti bolji rezultati za veći blok čestica.
+ Pritom treba imati na umu da je lokalna memorija izuzetno mala u odnosu
+ na globalnu, pa treba biti pažljiv oko njenog korištenja.
+ Povećanjem broja čestica i iteracija naravno se i duljina izvođenja povećava
+ eksponencijalno.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement tbph
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename gnuplot/opencl-nbody-blocks.eps
+	width 8.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:OpenCL,-N-body,-veličine"
+
+\end_inset
+
+OpenCL
+\emph default
+, 
+\emph on
+N-body
+\emph default
+, veličine lokalnih blokova
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Usporedba rezultata OpenCL-a (GPU) i OpenMP-a (CPU)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Posebno je zanimljivo usporediti postignute rezultate 
+\emph on
+OpenCL-a
+\emph default
+ na GPU-u i 
+\emph on
+OpenMP-a
+\emph default
+ na CPU-u kako bi se okvirno usporedio utjecaj same arhitekture mikroprocesora
+ na rezultate.
+ Korišten je primjer množenja matrica, za 
+\emph on
+OpenCL
+\emph default
+ je korištena programska jezgra 3 sa lokalnom veličinom indeksnog prostora
+ od 8x8 elemenata, ona je ujedno postigla i najbolje rezultate u prethodnom
+ ispitivanju.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Slika 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:OpenCL-FX570m-:"
+
+\end_inset
+
+.
+ prikazuje performanse 
+\emph on
+Marvina
+\emph default
+ i Nvidia GPU-a za koje bi mogli tvrditi kako su neočekivani.
+ Razlog je što korišteni GPU radi na taktu od 475MHz dok 
+\emph on
+Marvinovi
+\emph default
+ CPU-ovi rade na 2GHz, također treba spomenuti kako je GPU generacijski
+ iz 2007.
+ godine, dok je CPU arhitekture koja se pojavila tek 2009.
+ godine, također ne treba ni zanemariti da je jedan 
+\emph on
+Xeon E5504
+\emph default
+ nekoliko puta skuplji od 
+\emph on
+Nvidie FX570m
+\emph default
+.
+ Sve navedene tvrdnje idu u prilog CPU-u, ali upravo tu dolazi do izražaja
+ paralelizirana arhitektura GPU-a koja je specijalizirana za matematičke
+ kalkulacije, te iz tog razloga postiže bolje performanse.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement tbph
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename gnuplot/opencl-openmp.eps
+	width 8.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:OpenCL-FX570m-:"
+
+\end_inset
+
+
+\emph on
+OpenCL FX570m
+\emph default
+ : 
+\emph on
+OpenMP
+\emph default
+ Marvin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Bitno je napomenuti kako su danas dostupni GPU-ovi za red veličine brži
+ od ovdje korištenog, te da je ugradnja više GPU-ova u jedno računalo daleko
+ jednostavnija i jeftinija nego gomilanje CPU-ova u skupim poslužiteljima,
+ grozdovima itd.
+ Danas imamo priliku iskorištavati snagu GPU-ova i za općenite svrhe, tako
+ da svakako treba voditi računa o odabiru platforme prilikom rješavanja
+ problema.
+\end_layout
+
+\begin_layout Section
+Zaključak
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+OpenCL
+\emph default
+ je prvi sustav koji omogućuje izvođenje istog programskog koda na različitim
+ platformama, olakšava postupak paralelizacije, a njegova primjena može
+ varirati od korisničkih aplikacija pa sve do računarstva visokih performansi.
+ 
+\emph on
+\lang english
+OpenCL
+\emph default
+ implementacije su već dostupne iako još nisu dovoljno zastupljene da bi
+ se nametnuo kao standard, ali se to može očekivati jer je otvorene specifikacij
+e u čijoj su izradi sudjelovale sve relevantnije kompanije.
+\end_layout
+
+\begin_layout Standard
+S druge strane danas imamo na raspolaganju mikroprocesore različitih arhitektura
+ i svrha, te se nameće pitanje kako ih što bolje i jednostavnije iskoristiti,
+ a 
+\emph on
+OpenCL
+\emph default
+ popunjava upravo tu prazninu.
+ U budućnosti svakako možemo očekivati korištenje GPU-ova u računalima u
+ općenitije svrhe, naravno uz postojanje neophodnog CPU-a.
+ Također se može očekivati i češća pojava 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+hibridnih
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ mikroprocesora koji sadrže veći broj jezgri, bile one opće namjene ili
+ specijalizirane (npr.
+ za matematičke kalkulacije).
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+Khronos OpenCL Working Group, 2009: The OpenCL Specification, version 1.0
+ rev 48
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+Nvidia, 2009: OpenCL Programming for the CUDA Architecture, version 2.3 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+Nvidia, 2009: OpenCL Programming Guide for the CUDA Architecture, version
+ 2.3 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-4"
+
+\end_inset
+
+Nvidia, 2009: OpenCL Best Practices Guide, version 1.0
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-9"
+
+\end_inset
+
+Andreas Klöckner, prosinac 2009: http://mathema.tician.de/software/pyopencl/
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-10"
+
+\end_inset
+
+Wikipedia, 12.02.2010: http://en.wikipedia.org/wiki/N-body_problem
+\end_layout
+
+\end_body
+\end_document

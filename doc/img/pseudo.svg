@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="pseudo.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;">
+      <path
+         id="path3926"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path3908"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective3606"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3628"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3672"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3672-2"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3730"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3837"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3837-7"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3823"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3823-0"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3823-6"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3823-06"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3823-061"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3823-4"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3823-65"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3823-9"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="280.17572"
+     inkscape:cy="695.92881"
+     inkscape:document-units="cm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-global="true"
+     inkscape:snap-nodes="false"
+     inkscape:snap-to-guides="false"
+     gridtolerance="30"
+     inkscape:window-width="1678"
+     inkscape:window-height="1030"
+     inkscape:window-x="0"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0"
+     inkscape:snap-bbox-midpoints="true">
+    <sodipodi:guide
+       orientation="1,0"
+       position="141.73228,685.71429"
+       id="guide2816" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="637.79528,614.28571"
+       id="guide2818" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid3978"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;stroke:none;stroke-width:2.20621467000000004;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3592"
+       width="495.62842"
+       height="550.99402"
+       x="142.83539"
+       y="58.898361"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pseudo.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.99382079;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3813"
+       width="239.0062"
+       height="39.82114"
+       x="270.49692"
+       y="72.044144"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pseudo.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.99382079;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3813-5"
+       width="239.0062"
+       height="39.82114"
+       x="270.49692"
+       y="132.8591"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pseudo.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.99382079;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3813-3"
+       width="239.0062"
+       height="39.82114"
+       x="270.49689"
+       y="192.45161"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pseudo.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.99382079;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3813-1"
+       width="239.0062"
+       height="39.82114"
+       x="270.49689"
+       y="252.45161"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pseudo.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.99382079;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3813-32"
+       width="239.0062"
+       height="39.82114"
+       x="270.49692"
+       y="312.8591"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pseudo.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.99382079;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3813-55"
+       width="239.0062"
+       height="39.82114"
+       x="270.49689"
+       y="372.4516"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pseudo.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.99382079;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3813-7"
+       width="239.0062"
+       height="39.82114"
+       x="270.49692"
+       y="506.8591"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pseudo.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.99382079;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3813-6"
+       width="239.0062"
+       height="39.82114"
+       x="270.49692"
+       y="558.85907"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pseudo.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:1.15525067;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3813-37"
+       width="238.84479"
+       height="53.844749"
+       x="270.57764"
+       y="432.93982"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pseudo.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3715"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       transform="translate(455.71429,-85.571429)"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pseudo.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><flowRegion
+         id="flowRegion3717"><rect
+           id="rect3719"
+           width="298.81696"
+           height="525.29022"
+           x="-215.16249"
+           y="161.40764" /></flowRegion><flowPara
+         id="flowPara3721">Stvaranje konteksta za </flowPara><flowPara
+         id="flowPara3765">željene tipove uređaja</flowPara><flowPara
+         id="flowPara3727" /><flowPara
+         id="flowPara3797" /><flowPara
+         id="flowPara3729">Stvaranje programskog redoslijeda </flowPara><flowPara
+         id="flowPara3767">za određeni uređaj u kontekstu</flowPara><flowPara
+         id="flowPara3731" /><flowPara
+         id="flowPara3799" /><flowPara
+         id="flowPara3733">Stvaranje memorijskih objekata</flowPara><flowPara
+         id="flowPara3773">međuspremnika u kontekstu</flowPara><flowPara
+         id="flowPara3735" /><flowPara
+         id="flowPara3801" /><flowPara
+         id="flowPara3739">Stvaranje objekta programa </flowPara><flowPara
+         id="flowPara3775">u kontekstu</flowPara><flowPara
+         id="flowPara3743" /><flowPara
+         id="flowPara3803" /><flowPara
+         id="flowPara3783">Stvaranje poveznice sa programskom </flowPara><flowPara
+         id="flowPara3763">jezgrom unutar programa</flowPara><flowPara
+         id="flowPara3747" /><flowPara
+         id="flowPara3805" /><flowPara
+         id="flowPara3749">Postavljanje argumenata </flowPara><flowPara
+         id="flowPara3777">programskoj jezgri</flowPara><flowPara
+         id="flowPara3751" /><flowPara
+         id="flowPara3807" /><flowPara
+         id="flowPara3761">Izvođenje programske jezgre u </flowPara><flowPara
+         id="flowPara3787">programskom redoslijedu,</flowPara><flowPara
+         id="flowPara3789">definiranje indeksnog prostora</flowPara><flowPara
+         id="flowPara3753" /><flowPara
+         id="flowPara3809" /><flowPara
+         id="flowPara3791">Dohvat rezultata iz </flowPara><flowPara
+         id="flowPara3795">objekta međuspremnika</flowPara><flowPara
+         id="flowPara3757" /><flowPara
+         id="flowPara3811" /><flowPara
+         id="flowPara3759">Oslobađanje zauzetih resursa</flowPara><flowPara
+         id="flowPara3723" /><flowPara
+         id="flowPara3725" /></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:0.99212598;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#Arrow2Lend)"
+       d="m 390.00002,111.86528 0,20.99382"
+       id="path3900"
+       inkscape:connector-type="polyline"
+       inkscape:connection-start="#rect3813"
+       inkscape:connection-end="#rect3813-5"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pseudo.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
+       d="m 390.00001,172.68024 -2e-5,19.77137"
+       id="path4538"
+       inkscape:connector-type="polyline"
+       inkscape:connection-start="#rect3813-5"
+       inkscape:connection-end="#rect3813-3"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pseudo.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+       d="m 389.99998,232.27275 0,20.17886"
+       id="path4726"
+       inkscape:connector-type="polyline"
+       inkscape:connection-start="#rect3813-3"
+       inkscape:connection-end="#rect3813-1"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pseudo.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
+       d="m 389.99999,292.27275 2e-5,20.58635"
+       id="path5286"
+       inkscape:connector-type="polyline"
+       inkscape:connection-start="#rect3813-1"
+       inkscape:connection-end="#rect3813-32"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pseudo.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
+       d="m 390.00001,352.68024 -2e-5,19.77136"
+       id="path5474"
+       inkscape:connector-type="polyline"
+       inkscape:connection-start="#rect3813-32"
+       inkscape:connection-end="#rect3813-55"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pseudo.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
+       d="m 390,412.27274 10e-6,20.66708"
+       id="path5662"
+       inkscape:connector-type="polyline"
+       inkscape:connection-start="#rect3813-55"
+       inkscape:connection-end="#rect3813-37"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pseudo.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
+       d="m 390.00002,486.78457 0,20.07453"
+       id="path5850"
+       inkscape:connector-type="polyline"
+       inkscape:connection-start="#rect3813-37"
+       inkscape:connection-end="#rect3813-7"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pseudo.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
+       d="m 390.00002,546.68024 0,12.17883"
+       id="path6038"
+       inkscape:connector-type="polyline"
+       inkscape:connection-start="#rect3813-7"
+       inkscape:connection-end="#rect3813-6"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/pseudo.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+  </g>
+</svg>

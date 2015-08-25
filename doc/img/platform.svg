@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="platform.svg">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective3606"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3628"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3672"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3672-2"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3730"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3837"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3837-7"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="381.14377"
+     inkscape:cy="780.16438"
+     inkscape:document-units="cm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-global="true"
+     inkscape:snap-nodes="false"
+     inkscape:snap-to-guides="false"
+     gridtolerance="30"
+     inkscape:window-width="1678"
+     inkscape:window-height="1030"
+     inkscape:window-x="0"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0"
+     inkscape:snap-bbox-midpoints="true">
+    <sodipodi:guide
+       orientation="1,0"
+       position="141.73228,685.71429"
+       id="guide2816" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="637.79528,614.28571"
+       id="guide2818" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid3978"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;stroke:none;stroke-width:1.77165353000000003;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3592"
+       width="496.06299"
+       height="355"
+       x="142.6181"
+       y="58.68108"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.86217457;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3594"
+       width="88.594597"
+       height="55.936073"
+       x="201.21759"
+       y="208.17216"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596"
+       width="11.868688"
+       height="43.962929"
+       x="207.09579"
+       y="214.57822"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-5"
+       width="11.868688"
+       height="43.962929"
+       x="224.81473"
+       y="214.57822"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-5-0"
+       width="11.868688"
+       height="43.962929"
+       x="272.06525"
+       y="214.57822"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:9.73299599px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="239.33469"
+       y="243.57016"
+       id="text3642"
+       transform="scale(1.0275715,0.9731683)"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3644"
+         x="239.33469"
+         y="243.57016"
+         style="font-size:16.22165489px">...</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.86217457;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3594-3"
+       width="88.594597"
+       height="55.936073"
+       x="186.45177"
+       y="222.15616"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-6"
+       width="11.868688"
+       height="43.962929"
+       x="192.33005"
+       y="228.56226"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-5-1"
+       width="11.868688"
+       height="43.962929"
+       x="210.04898"
+       y="228.56226"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-5-0-0"
+       width="11.868688"
+       height="43.962929"
+       x="257.29941"
+       y="228.56226"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:9.73299599px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="224.96507"
+       y="257.93976"
+       id="text3642-6"
+       transform="scale(1.0275715,0.9731683)"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3644-3"
+         x="224.96507"
+         y="257.93976"
+         style="font-size:16.22165489px">...</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.86217457;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3594-0"
+       width="88.594597"
+       height="55.936073"
+       x="171.68602"
+       y="236.1402"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-61"
+       width="11.868688"
+       height="43.962929"
+       x="177.56424"
+       y="242.54623"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-5-5"
+       width="11.868688"
+       height="43.962929"
+       x="195.28319"
+       y="242.54623"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-5-0-5"
+       width="11.868688"
+       height="43.962929"
+       x="242.53362"
+       y="242.54623"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:9.73299599px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="210.59547"
+       y="272.3093"
+       id="text3642-4"
+       transform="scale(1.0275715,0.9731683)"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3644-7"
+         x="210.59547"
+         y="272.3093"
+         style="font-size:16.22165489px">...</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.32657599;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3720"
+       width="140.38823"
+       height="104.98755"
+       x="-300.50034"
+       y="198.04993"
+       transform="scale(-1,1)"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.86217457;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3594-8"
+       width="88.594597"
+       height="55.936073"
+       x="360.66641"
+       y="208.17215"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-4"
+       width="11.868688"
+       height="43.962929"
+       x="366.54462"
+       y="214.57822"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-5-3"
+       width="11.868688"
+       height="43.962929"
+       x="384.26355"
+       y="214.57822"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-5-0-1"
+       width="11.868688"
+       height="43.962929"
+       x="431.51407"
+       y="214.57822"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:9.73299599px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="394.50525"
+       y="243.57014"
+       id="text3642-49"
+       transform="scale(1.0275715,0.9731683)"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3644-2"
+         x="394.50525"
+         y="243.57014"
+         style="font-size:16.22165489px">...</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.86217457;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3594-3-0"
+       width="88.594597"
+       height="55.936073"
+       x="345.9006"
+       y="222.15616"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-6-6"
+       width="11.868688"
+       height="43.962929"
+       x="351.77887"
+       y="228.56226"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-5-1-8"
+       width="11.868688"
+       height="43.962929"
+       x="369.4978"
+       y="228.56226"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-5-0-0-9"
+       width="11.868688"
+       height="43.962929"
+       x="416.74823"
+       y="228.56226"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:9.73299599px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="380.13565"
+       y="257.93976"
+       id="text3642-6-2"
+       transform="scale(1.0275715,0.9731683)"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3644-3-6"
+         x="380.13565"
+         y="257.93976"
+         style="font-size:16.22165489px">...</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.86217457;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3594-0-6"
+       width="88.594597"
+       height="55.936073"
+       x="331.13486"
+       y="236.1402"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-61-4"
+       width="11.868688"
+       height="43.962929"
+       x="337.01306"
+       y="242.54623"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-5-5-9"
+       width="11.868688"
+       height="43.962929"
+       x="354.73203"
+       y="242.54623"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-5-0-5-5"
+       width="11.868688"
+       height="43.962929"
+       x="401.98245"
+       y="242.54623"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:9.73299599px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="365.76605"
+       y="272.3093"
+       id="text3642-4-0"
+       transform="scale(1.0275715,0.9731683)"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3644-7-4"
+         x="365.76605"
+         y="272.3093"
+         style="font-size:16.22165489px">...</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.32657599;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3720-8"
+       width="140.38823"
+       height="104.98755"
+       x="-459.94916"
+       y="198.04993"
+       transform="scale(-1,1)"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.86217457;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3594-1"
+       width="88.594597"
+       height="55.936073"
+       x="520.11523"
+       y="208.17216"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-7"
+       width="11.868688"
+       height="43.962929"
+       x="525.99341"
+       y="214.57822"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-5-2"
+       width="11.868688"
+       height="43.962929"
+       x="543.71234"
+       y="214.57822"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-5-0-7"
+       width="11.868688"
+       height="43.962929"
+       x="590.96289"
+       y="214.57822"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:9.73299599px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="549.67566"
+       y="243.57016"
+       id="text3642-2"
+       transform="scale(1.0275715,0.9731683)"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3644-26"
+         x="549.67566"
+         y="243.57016"
+         style="font-size:16.22165489px">...</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.86217457;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3594-3-1"
+       width="88.594597"
+       height="55.936073"
+       x="505.34937"
+       y="222.15616"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-6-0"
+       width="11.868688"
+       height="43.962929"
+       x="511.22766"
+       y="228.56226"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-5-1-6"
+       width="11.868688"
+       height="43.962929"
+       x="528.94659"
+       y="228.56226"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-5-0-0-1"
+       width="11.868688"
+       height="43.962929"
+       x="576.19702"
+       y="228.56226"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:9.73299599px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="535.30609"
+       y="257.93976"
+       id="text3642-6-5"
+       transform="scale(1.0275715,0.9731683)"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3644-3-9"
+         x="535.30609"
+         y="257.93976"
+         style="font-size:16.22165489px">...</tspan></text>
+    <rect
+       style="fill:#e8e8e8;fill-opacity:1;stroke:#000000;stroke-width:0.86217457;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3594-0-4"
+       width="88.594597"
+       height="55.936073"
+       x="490.58362"
+       y="236.1402"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-61-9"
+       width="11.868688"
+       height="43.962929"
+       x="496.46185"
+       y="242.54623"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-5-5-0"
+       width="11.868688"
+       height="43.962929"
+       x="514.18079"
+       y="242.54623"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <rect
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.80760628;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3596-5-0-5-9"
+       width="11.868688"
+       height="43.962929"
+       x="561.43121"
+       y="242.54623"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <text
+       xml:space="preserve"
+       style="font-size:9.73299599px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="520.93646"
+       y="272.3093"
+       id="text3642-4-1"
+       transform="scale(1.0275715,0.9731683)"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><tspan
+         sodipodi:role="line"
+         id="tspan3644-7-7"
+         x="520.93646"
+         y="272.3093"
+         style="font-size:16.22165489px">...</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.32657599;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3720-7"
+       width="140.38823"
+       height="104.98755"
+       x="-619.39795"
+       y="198.04993"
+       transform="scale(-1,1)"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3968"
+       style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       transform="translate(2.8571429,-25.857143)"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><flowRegion
+         id="flowRegion3970"><rect
+           id="rect3972"
+           width="125.4184"
+           height="53.968826"
+           x="321.42856"
+           y="98.790756" /></flowRegion><flowPara
+         id="flowPara3974"
+         style="font-size:14px;font-weight:bold;text-align:center;text-anchor:middle;-inkscape-font-specification:Bitstream Vera Sans Bold">Domaćin</flowPara><flowPara
+         id="flowPara3976"
+         style="text-align:center;text-anchor:middle">(engl. <flowSpan
+   style="font-style:italic"
+   id="flowSpan3257">host</flowSpan>)</flowPara><flowPara
+         style="text-align:center;text-anchor:middle"
+         id="flowPara4112">Osobno računalo</flowPara></flowRoot>    <path
+       style="fill:none;stroke:#404040;stroke-width:0.99212598;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 230,197.36218 0,-60 315,0 0,60 m -155,0.35714 0,-74.64285"
+       id="path4056"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4058"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       transform="translate(296.28571,2.1428571)"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><flowRegion
+         id="flowRegion4060"><rect
+           id="rect4062"
+           width="164.16318"
+           height="65.70816"
+           x="174.28572"
+           y="340.21933"
+           style="text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         id="flowPara4064"
+         style="font-weight:bold">Procesirajuči element</flowPara><flowPara
+         id="flowPara4082"
+         style="font-size:10px">(engl. <flowSpan
+   style="font-style:italic"
+   id="flowSpan3263">processing element</flowSpan>)</flowPara><flowPara
+         id="flowPara4120">Dretva GPU-a</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4066"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       transform="translate(-21.607142,2.1071428)"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><flowRegion
+         id="flowRegion4068"><rect
+           id="rect4070"
+           width="143.65808"
+           height="69.957924"
+           x="342.14285"
+           y="340.21933"
+           style="text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         id="flowPara4072"
+         style="font-weight:bold">Računalna jedinica</flowPara><flowPara
+         id="flowPara4084"
+         style="font-size:10px">(engl. <flowSpan
+   style="font-style:italic"
+   id="flowSpan3261">computing unit</flowSpan>)</flowPara><flowPara
+         id="flowPara4116">Jezgra CPU-a,</flowPara><flowPara
+         id="flowPara4118">Procesor GPU-a</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4074"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       transform="translate(-333.28571,-7.1428571)"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973"><flowRegion
+         id="flowRegion4076"><rect
+           id="rect4078"
+           width="142.85719"
+           height="50.714294"
+           x="491.42856"
+           y="349.50504"
+           style="text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         id="flowPara4080"
+         style="font-weight:bold">Računalni uređaj</flowPara><flowPara
+         id="flowPara4086"
+         style="font-size:10px">(engl. <flowSpan
+   style="font-style:italic"
+   id="flowSpan3259">compute device</flowSpan>)</flowPara><flowPara
+         id="flowPara4114">CPU, GPU</flowPara></flowRoot>    <path
+       style="fill:none;stroke:#404040;stroke-width:1.0629921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 501.32238,276.05995 21.71828,64.14469"
+       id="path4098"
+       inkscape:connector-type="polyline"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <path
+       style="fill:none;stroke:#404040;stroke-width:1.0629921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 520.0102,276.56503 14.64722,60.60915"
+       id="path4102"
+       inkscape:connector-type="polyline"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <path
+       style="fill:none;stroke:#404040;stroke-width:1.0629921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 567.99245,278.08026 556.88077,336.6691"
+       id="path4104"
+       inkscape:connector-type="polyline"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <path
+       style="fill:none;stroke:#404040;stroke-width:1.06299213;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 374.76659,280.10056 4.54569,59.599"
+       id="path4106"
+       inkscape:connector-type="polyline"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <path
+       style="fill:none;stroke:#404040;stroke-width:1.06299213000000004;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 400.02041,229.08786 387.3935,338.68941"
+       id="path4108"
+       inkscape:connector-type="polyline"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+    <path
+       style="fill:none;stroke:#404040;stroke-width:1.06299213000000004;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 279.30718,290.70716 231.83001,336.6691"
+       id="path4110"
+       inkscape:connector-type="polyline"
+       inkscape:export-filename="/home/veljko/diplomski/doc/img/platform.png"
+       inkscape:export-xdpi="299.93973"
+       inkscape:export-ydpi="299.93973" />
+  </g>
+</svg>
